@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║         CORRECTOR EMPRESAULA - Gestión Comercial ODOO           ║
-║         Módulo de Compras, Ventas e Inventario                  ║
-║         Ciclo Formativo: Administración y Finanzas              ║
+║         CORRECTOR EMPRESAULA - Gestión Comercial ODOO            ║
+║         Módulo de Compras, Ventas e Inventario                   ║
+║         Ciclo Formativo: Administración y Finanzas               ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
