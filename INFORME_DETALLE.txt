@@ -1,0 +1,288 @@
+INFORME DETALLADO DE CORRECCIONES - EmpresAula
+Generado: 2026-03-09 09:29
+============================================================
+
+ALUMNO: ADG32 5796 NSACARES SL
+----------------------------------------
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6265 SMORENO SL
+----------------------------------------
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561013: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561014: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6320 MNAVARRO SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561708
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561707
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561707: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561708: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6352 SAANANOU SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561694
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561695
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561694: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561695: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6356 WAANANOU SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 535313
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 535295
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 537767
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 537160
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 540159
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 540161
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 542875
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 545041
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 545755
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 546232
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 547964
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 542874
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 548603
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 548606
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 549377
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 551319
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 551323
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 551595
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 554396
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 554399
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 557603
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 557605
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 560979
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 560980
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561705
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561706
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561705: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561706: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6366 JMORAGUES SL
+----------------------------------------
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6368 LPIZA SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561675 (ALUBIX SL, 171.82€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561677 (ROCALLA SA, 162.14€)
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 560474: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 560477: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6369 VMASTRANGELO SL
+----------------------------------------
+ERRORES:
+  ✗ [FAC_ESTADO] Factura 2025/00009: estado 'Pagado parcialmente'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6427 NANANOU SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561701
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561703
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561701: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561703: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6428 ABOUBAL SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561157
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561158
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561714
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561715
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561157: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561158: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561714: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561715: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6431 GZOUGGAGHI SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561700
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561702
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561700: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561702: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6467 WCHANTAH SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535293 (ALUBIX SL, 1436.86€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535314 (ROCALLA SA, 1608.09€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537791 (ALUBIX SL, 3718.43€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537793 (ROCALLA SA, 3981.51€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540145 (ALUBIX SL, 4128.91€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540147 (ROCALLA SA, 3860.51€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542353 (ALUBIX SL, 3632.11€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542356 (ROCALLA SA, 4164.82€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº546162 (ALUBIX SL, 3949.66€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº546163 (ROCALLA SA, 4140.62€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548783 (ALUBIX SL, 4031.84€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548784 (ROCALLA SA, 4464.30€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551291 (ALUBIX SL, 3795.71€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551292 (ROCALLA SA, 4034.75€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554389 (ALUBIX SL, 3847.69€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554390 (ROCALLA SA, 3924.64€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556950 (ALUBIX SL, 4215.23€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556951 (ROCALLA SA, 4035.35€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561168 (ALUBIX SL, 4187.93€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561170 (ROCALLA SA, 4133.36€)
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6478 CBAUZA SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535288 (ALUBIX SL, 1218.47€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535307 (ROCALLA SA, 1057.54€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537784 (ALUBIX SL, 4187.81€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537786 (ROCALLA SA, 3552.56€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540119 (ALUBIX SL, 4545.97€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540120 (ROCALLA SA, 3753.42€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542321 (ALUBIX SL, 4195.07€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542325 (ROCALLA SA, 3349.28€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº544973 (ALUBIX SL, 4435.86€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº544976 (ROCALLA SA, 3528.36€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548735 (ALUBIX SL, 3759.47€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548736 (ROCALLA SA, 3281.52€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551216 (ALUBIX SL, 4481.84€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551220 (ROCALLA SA, 3782.46€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554347 (ALUBIX SL, 4146.67€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554350 (ROCALLA SA, 3533.20€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556850 (ALUBIX SL, 5097.73€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556858 (ROCALLA SA, 3617.90€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561176 (ALUBIX SL, 4143.04€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561177 (ROCALLA SA, 3675.98€)
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6702 NFORNES SL
+----------------------------------------
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6706 NSUIYHI SL
+----------------------------------------
+ERRORES:
+  ✗ [ALB_NUMERO] Albarán Nºnan vs real Nº35
+  ✗ [ALB_FECHA] Albarán nan: None vs 2025-12-18
+  ✗ [ALB_IMPORTE] Albarán nan: 0.00€ vs 3332.34€
+  ✗ [ALB_ESTADO] Albarán nan: estado 'Borrador'
+  ✗ [FAC_FECHA] Factura 2025/00024: fecha incorrecta
+  ✗ [FAC_IMPORTE] Factura 2025/00036: 3259.74€ vs 3332.34€
+  ✗ [FAC_FECHA] Factura 2025/00036: fecha incorrecta
+  ✗ [FAC_FECHA] Factura 2025/00034: fecha incorrecta
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6707 MOUAZINE SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561006 (ROCALLA SA, 4433.44€)
+  ✗ [PROVEEDOR_ERROR] Pedido 561003: alumno 'ROCALLA SA' vs real 'ALUBIX SL'
+  ✗ [IMPORTE_ERROR] Pedido 561003: 4433.44€ vs 4205.96€
+  ✗ [ALB_FECHA] Albarán 25: 2025-12-12 vs 2025-12-10
+  ✗ [ALB_PROVEEDOR] Albarán 37: proveedor incorrecto
+  ✗ [ALB_NUMERO] Albarán Nº37 vs real Nº29
+  ✗ [ALB_IMPORTE] Albarán 37: 4433.44€ vs 4205.96€
+  ✗ [FAC_NUMERO] Pedido 561003: factura 2025/00036 vs real 2025/00033
+  ✗ [FAC_IMPORTE] Factura 2025/00036: 4433.44€ vs 4205.96€
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6713 BCARBONELL SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535284 (ALUBIX SL, 1458.05€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº535309 (ROCALLA SA, 1007.33€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537817 (ALUBIX SL, 4086.78€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº537819 (ROCALLA SA, 2654.74€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540729 (ALUBIX SL, 5093.50€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº540730 (ROCALLA SA, 3086.11€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542370 (ALUBIX SL, 5405.68€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542376 (ROCALLA SA, 3374.69€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº543417 (ALUBIX SL, 66.55€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº545521 (ALUBIX SL, 5009.40€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº545522 (ROCALLA SA, 3203.48€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548616 (ALUBIX SL, 4575.01€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº548617 (ROCALLA SA, 2944.54€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551299 (ALUBIX SL, 4397.75€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº551308 (ROCALLA SA, 2845.32€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554369 (ALUBIX SL, 5054.78€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554371 (ROCALLA SA, 3290.60€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556838 (ALUBIX SL, 4768.01€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº556841 (ROCALLA SA, 3154.47€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561417 (ALUBIX SL, 4285.82€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561418 (ROCALLA SA, 2674.10€)
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6734 LABOLAFIO SL
+----------------------------------------
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6746 ELLADO SL
+----------------------------------------
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6777 JGARCIA SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561428
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561429
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561428: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561429: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
+ALUMNO: ADG32 6792 PCAPO SL
+----------------------------------------
+ERRORES:
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541842 (ALUBIX SL, 1976.54€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541843 (ROCALLA SA, 619.52€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541844 (ALUBIX SL, 2187.08€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541845 (ROCALLA SA, 748.99€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541850 (ROCALLA SA, 1.21€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541851 (ALUBIX SL, 1684.32€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº541852 (ROCALLA SA, 537.85€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542297 (ALUBIX SL, 2125.37€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542300 (ROCALLA SA, 687.89€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542352 (ALUBIX SL, 1615.35€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542355 (ROCALLA SA, 529.38€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542384 (ALUBIX SL, 1795.04€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº542387 (ROCALLA SA, 619.52€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº546114 (ALUBIX SL, 5778.96€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº546115 (ROCALLA SA, 1923.30€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº549163 (ALUBIX SL, 6122.00€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº549166 (ROCALLA SA, 2068.50€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº552657 (ALUBIX SL, 5646.47€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº552659 (ROCALLA SA, 1968.67€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554387 (ALUBIX SL, 5916.90€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº554391 (ROCALLA SA, 2058.82€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº557677 (ALUBIX SL, 6221.82€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº557680 (ROCALLA SA, 2002.55€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561422 (ALUBIX SL, 5820.71€)
+  ✗ [PEDIDO_FALTANTE] Pedido Nº561423 (ROCALLA SA, 2044.90€)
+CORRECTOS: 1 verificaciones
+
+ALUMNO: ADG32 6844 TTRAMULLAS SL
+----------------------------------------
+ERRORES:
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561458
+  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561461
+AVISOS:
+  ⚠ [ESTADO_FAC] Pedido 561458: 'Facturas en espera' vs esperado 'Totalmente facturado'
+  ⚠ [ESTADO_FAC] Pedido 561461: 'Facturas en espera' vs esperado 'Totalmente facturado'
+CORRECTOS: 2 verificaciones
+
