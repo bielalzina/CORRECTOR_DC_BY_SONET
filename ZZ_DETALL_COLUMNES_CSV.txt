@@ -1,0 +1,273 @@
+
+???????????????????????????????????????????????????????????????????
+?         CORRECTOR EMPRESAULA v1.0                               ?
+?         Gesti�n Comercial ODOO � Ciclo Admin y Finanzas         ?
+???????????????????????????????????????????????????????????????????
+
+  1 ? Correcci�n COMPRAS
+  2 ? Correcci�n VENTAS
+  3 ? Correcci�n INVENTARIO
+  4 ? Correcci�n COMPLETA (todos los m�dulos)
+  5  ? Diagn�stico columnas CSV
+  0  ? Salir
+
+  Selecciona opci�n: 5
+  Directorio con los CSVs [Enter = actual]: 
+
+??????????????????????????????????????????????????????????????????
+  DIAGN�STICO DE COLUMNAS CSV
+??????????????????????????????????????????????????????????????????
+
+  0_DATOS_COMPRAS_REALES.csv (469 filas)
+     0  'R_IDTOTS_C'
+     1  'R_ID_C'
+     2  'R_EXPEDIENT_C'
+     3  'R_EMPRESA_C'
+     4  'R_ESTADO_FC'
+     5  'R_PROVEEDOR_C'
+     6  'R_FECHA_EMISION_C'
+     7  'R_NUMERO_CP'
+     8  'R_NUMERO_CA'
+     9  'R_NUMERO_CF'
+    10  'R_IMPORTE_C'
+    11  'R_ACUMULADO_C'
+
+  Primera fila (primeras columnas):
+    R_IDTOTS_C: 1
+    R_ID_C: 1
+    R_EXPEDIENT_C: 5796
+    R_EMPRESA_C: ADG32 5796 NSACARES SL
+    R_ESTADO_FC: Cancel·lada
+    R_PROVEEDOR_C: ALUBIX SL
+
+  1_DATOS_PEDIDOS_COMPRA_ALUMNOS.csv (381 filas)
+     0  'A_IDTOTS_CP'
+     1  'A_CLAU_UNICA_CP'
+     2  'A_ID_CP'
+     3  'A_EXPEDIENT_CP'
+     4  'A_EMPRESA_CP'
+     5  'A_REF_ODOO_CP'
+     6  'A_FECHA_ALTA_ODOO_CP'
+     7  'A_NUMERO_CP'
+     8  'A_FECHA_EMISION_CP'
+     9  'A_PROVEEDOR_CP'
+    10  'A_IMPORTE_CP'
+    11  'A_ACUMULADO_CP'
+    12  'A_ESTADO_CP'
+    13  'A_ESTADO_FACTURACION_CP'
+  
+  Primera fila (primeras columnas):
+    A_IDTOTS_CP: 1
+    A_CLAU_UNICA_CP: 5796-C-C/00001
+    A_ID_CP: 1
+    A_EXPEDIENT_CP: 5796
+    A_EMPRESA_CP: ADG32 5796 NSACARES SL
+    A_REF_ODOO_CP: C-C/00001
+
+
+
+
+  2_DATOS_ALBARANES_COMPRA_ALUMNOS.csv (382 filas)
+     0  'A_IDTOTS_CA'
+     1  'A_CLAU_UNICA_CA'
+     2  'A_ID_CA'
+     3  'A_EXPEDIENT_CA'
+     4  'A_EMPRESA_CA'
+     5  'A_REF_ODOO_CA'
+     6  'A_FECHA_ALTA_ODOO_CA'
+     7  'A_NUMERO_CA'
+     8  'A_FECHA_EMISION_CA'
+     9  'A_PROVEEDOR_CA'
+    10  'A_ORIGEN_CA'
+    11  'A_IMPORTE_CA'
+    12  'A_ACUMULADO_CA'
+    13  'A_ESTADO_CA'
+  
+  Primera fila (primeras columnas):
+    A_IDTOTS_CA: 1
+    A_CLAU_UNICA_CA: 5796-C-C/00001
+    A_ID_CA: 1
+    A_EXPEDIENT_CA: 5796
+    A_EMPRESA_CA: ADG32 5796 NSACARES SL
+    A_REF_ODOO_CA: MGZ01/ENTRA/00001
+
+
+  3_DATOS_FACTURAS_COMPRA_ALUMNOS.csv (364 filas)
+     0  'A_IDTOTS_CF'
+     1  'A_CLAU_UNICA_CF'
+     2  'A_ID_CF'
+     3  'A_EXPEDIENT_CF'
+     4  'A_EMPRESA_CF'
+     5  'A_REF_ODOO_CF'
+     6  'A_PROVEEDOR_CF'
+     7  'A_NUMERO_CF'
+     8  'A_FECHA_EMISION_CF'
+     9  'A_ORIGEN_CF'
+    10  'A_IMPORTE_CF'
+    11  'A_ACUMULADO_CF'
+    12  'A_ESTADO_PAGO_CF'
+  
+  Primera fila (primeras columnas):
+    A_IDTOTS_CF: 1
+    A_CLAU_UNICA_CF: 5796-C-C/00001
+    A_ID_CF: 1
+    A_EXPEDIENT_CF: 5796
+    A_EMPRESA_CF: ADG32 5796 NSACARES SL
+    A_REF_ODOO_CF: FC/2025/0001
+
+
+
+
+  5_DATOS_VENTAS_REALES.csv (616 filas)
+     0  'R_INDEX_V'
+     1  'ID'
+     2  'R_EMPRESA_V'
+     3  'R_FECHA_EMISION_VP'
+     4  'R_NUMERO_VP'
+     5  'R_REF_ODOO_VP'
+     6  'R_CLIENTE_V'
+     7  'R_IMPORTE_V'
+     8  'R_ACUMULADO_V'
+     9  'R_FECHA_MAX_FACTURACION_V'
+  
+  Primera fila (primeras columnas):
+    R_INDEX_V: 5796-C-V/00001
+    ID: 1
+    R_EMPRESA_V: ADG32 5796 NSACARES SL
+    R_FECHA_EMISION_VP: 17/10/2025
+    R_NUMERO_VP: 1377533
+    R_REF_ODOO_VP: C-V/00001
+
+
+  6_DATOS_PEDIDOS_VENTA_ALUMNOS.csv (504 filas)
+     0  'ID-TOTS'
+     1  'A_CLAU_UNICA_VP'
+     2  'A_ID_VP'
+     3  'A_EMPRESA_VP'
+     4  'A_REF_ODOO_VP'
+     5  'A_FECHA_ALTA_ODOO_VP'
+     6  'A_CLIENT_VP'
+     7  'A_FECHA_EMISION_VP'
+     8  'A_NUMERO_VP'
+     9  'A_IMPORTE_VP'
+    10  'A_ACUMULADO_VP'
+    11  'A_ESTADO_VP'
+    12  'A_ESTADO_FACTURACION_VP'
+  
+  Primera fila (primeras columnas):
+    ID-TOTS: 1
+    A_CLAU_UNICA_VP: 5796-C-V/00001
+    A_ID_VP: 1
+    A_EMPRESA_VP: ADG32 5796 NSACARES SL
+    A_REF_ODOO_VP: C-V/00001
+    A_FECHA_ALTA_ODOO_VP: 17/10/2025
+
+
+
+
+  7_DATOS_ALBARANES_VENTA_ALUMNOS.csv (512 filas)
+     0  'A_CLAU_UNICA_VA'
+     1  'A_ID_VA'
+     2  'A_EMPRESA_VA'
+     3  'A_REF_ODOO_VA'
+     4  'A_FECHA_ALBARAN_VA'
+     5  'A_ORIGEN_VA'
+     6  'A_IMPORTE_VA'
+     7  'A_ACUMULADO_VA'
+     8  'A_CLIENT_VA'
+     9  'A_ESTADO_VA'
+  
+  Primera fila (primeras columnas):
+    A_CLAU_UNICA_VA: 5796-C-V/00001
+    A_ID_VA: 1
+    A_EMPRESA_VA: ADG32 5796 NSACARES SL
+    A_REF_ODOO_VA: MGZ01/SURT/00001
+    A_FECHA_ALBARAN_VA: 17/10/2025
+    A_ORIGEN_VA: C-V/00001
+
+
+  8_DATOS_FACTURAS_VENTA_ALUMNOS.csv (440 filas)
+     0  'A_CLAU_UNICA_VF'
+     1  'A_ID_VF'
+     2  'A_EMPRESA_VF'
+     3  'A_NUM_FACTURA_VF'
+     4  'A_FECHA_FACTURA_VF'
+     5  'A_ORIGEN_VF'
+     6  'A_IMPORTE_VF'
+     7  'A_ACUMULADO_VF'
+     8  'A_CLIENT_VF'
+     9  'A_PAGADA_VF'
+    10  'A_ENVIADA_VF'
+  
+  Primera fila (primeras columnas):
+    A_CLAU_UNICA_VF: 5796-C-V/00001
+    A_ID_VF: 1
+    A_EMPRESA_VF: ADG32 5796 NSACARES SL
+    A_NUM_FACTURA_VF: FV-1/2025/00001
+    A_FECHA_FACTURA_VF: 17/10/2025
+    A_ORIGEN_VF: C-V/00001
+
+
+
+  9_DATOS_INVENTARIO_ALUMNO.csv (72 filas)
+     0  'A_CLAU_UNICA_I'
+     1  'A_IDTOTS_I'
+     2  'ID'
+     3  'A_EXPEDIENT_I'
+     4  'A_EMPRESA_I'
+     5  'A_PRODUCTE_I'
+     6  'A_COST_UNITARI_I'
+     7  'A_IMPORT_I'
+     8  'A_UNITATS_REALS_I'
+     9  'A_UNITATS_DISPONIBLES_I'
+    10  'A_UNITATS_PENDENTS_ENTRAR_I'
+    11  'A_UNITATS_PENDENTS_SORTIR_I'
+  Primera fila (primeras columnas):
+    A_CLAU_UNICA_I: 5796_AP8461_
+    A_IDTOTS_I: 1,00
+    ID: 1,00
+    A_EXPEDIENT_I: 5796,00
+    A_EMPRESA_I: ADG32 5796 NSACARES SL
+    A_PRODUCTE_I: _AP8461_
+
+
+
+
+  10_HISTORIAL_E_S_INVENTARIO_ALUMNO.csv (2866 filas)
+     0  'A_CLAU_UNICA_HES'
+     1  'ID-TOTS'
+     2  'ID'
+     3  'A_EXPEDIENT_HES'
+     4  'A_EMPRESA_HES'
+     5  'A_PRODUCTE_HES'
+     6  'A_DATA_HES'
+     7  'A_REFERENCIA_HES'
+     8  'A_ORIGEN_HES'
+     9  'A_DESTI_HES'
+    10  'A_UNITATS_HES'
+    11  'A_IN_HES'
+    12  'A_OUT_HES'
+    13  'A_STOCK_HES'
+    14  'A_OPERACIO_HES'
+    15  'A_ESTAT_HES'
+  
+  Primera fila (primeras columnas):
+    A_CLAU_UNICA_HES: 5796_AP8461_
+    ID-TOTS: 1
+    ID: 5
+    A_EXPEDIENT_HES: 5796
+    A_EMPRESA_HES: ADG32 5796 NSACARES SL
+    A_PRODUCTE_HES: _AP8461_
+
+
+
+	4_FECHA_ENTREGA_TRABAJOS.csv
+    1. 'Expediente'
+    2. 'Empresa'
+    3. 'Fecha_entrega'
+    4. 'Estado_entrega'
+
+
+5796,ADG32 5796 NSACARES SL,2025-12-18,ENTREGADA
+6265,ADG32 6265 SMORENO SL,2025-12-19,ENTREGADA
+6320,ADG32 6320 MNAVARRO SL,2025-12-30,ENTREGADA

@@ -7,9 +7,8 @@
 # Ciclo Formativo: Administración y Finanzas
 # ═════════════════════════════════════════════════════════════════════════════
 
-
-import csv
 import pandas as pd
+import csv
 import os
 import sys
 import re
@@ -35,44 +34,30 @@ class Color:
     BG_YELLOW = "\033[43m"
     BG_BLUE = "\033[44m"
 
-def c(text, color):
-    return f"{color}{text}{Color.RESET}"
-
-def ok(msg):
-    print(f"  {c('✓', Color.GREEN)} {msg}")
-
-def err(msg):
-    print(f"  {c('✗', Color.RED)} {msg}")
-
-
-def warn(msg):
-    print(f"  {c('⚠', Color.YELLOW)} {msg}")
-
-
-def info(msg):
-    print(f"  {c('·', Color.CYAN)} {msg}")
-
+def c(text, color): return f"{color}{text}{Color.RESET}"
+def ok(msg):    print(f"  {c('✓', Color.GREEN)} {msg}")
+def err(msg):   print(f"  {c('✗', Color.RED)} {msg}")
+def warn(msg):  print(f"  {c('⚠', Color.YELLOW)} {msg}")
+def info(msg):  print(f"  {c('·', Color.CYAN)} {msg}")
 
 def header(title):
     w = 66
     print()
-    print(c("═" * w, Color.BLUE))
+    print(c('═' * w, Color.BLUE))
     print(c(f"  {title}", Color.BOLD + Color.WHITE))
-    print(c("═" * w, Color.BLUE))
-
+    print(c('═' * w, Color.BLUE))
 
 def subheader(title):
     print(f"\n{c('─'*50, Color.GRAY)}")
     print(c(f"  {title}", Color.CYAN + Color.BOLD))
-    print(c("─" * 50, Color.GRAY))
-
+    print(c('─'*50, Color.GRAY))
 
 def separador():
-    print(c("·" * 50, Color.GRAY))
+    print(c('·'*50, Color.GRAY))
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# CARREGA DE DADES
+# CARGA DE DATOS
 # ═════════════════════════════════════════════════════════════════════════════
 
 def normalizar_importe(valor):

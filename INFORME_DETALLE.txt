@@ -1,17 +1,17 @@
 INFORME DETALLADO DE CORRECCIONES - EmpresAula
-Generado: 2026-03-09 09:29
+Generado: 2026-03-10 13:08
 ============================================================
 
 ALUMNO: ADG32 5796 NSACARES SL
 ----------------------------------------
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6265 SMORENO SL
 ----------------------------------------
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561013: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561014: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6320 MNAVARRO SL
 ----------------------------------------
@@ -21,17 +21,25 @@ ERRORES:
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561707: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561708: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6352 SAANANOU SL
 ----------------------------------------
 ERRORES:
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561694
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561695
+  ✗ [PED_V_TARDIO] Pedido 1414550: introducido tardíamente
+  ✗ [PED_V_TARDIO] Pedido 1415480: introducido tardíamente
+  ✗ [PED_V_TARDIO] Pedido 1416394: introducido tardíamente
+  ✗ [ALB_V_TARDIO] Albarán pedido 1414550: generado tardíamente
+  ✗ [ALB_V_TARDIO] Albarán pedido 1415480: generado tardíamente
+  ✗ [ALB_V_TARDIO] Albarán pedido 1416394: generado tardíamente
+  ✗ [FAC_NUM_CORRELATIVA] Falta factura Nº2
+  ✗ [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561694: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561695: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6356 WAANANOU SL
 ----------------------------------------
@@ -65,11 +73,11 @@ ERRORES:
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561705: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561706: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6366 JMORAGUES SL
 ----------------------------------------
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6368 LPIZA SL
 ----------------------------------------
@@ -79,47 +87,49 @@ ERRORES:
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 560474: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 560477: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 1 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6369 VMASTRANGELO SL
 ----------------------------------------
 ERRORES:
   ✗ [FAC_ESTADO] Factura 2025/00009: estado 'Pagado parcialmente'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6427 NANANOU SL
 ----------------------------------------
 ERRORES:
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561701
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561703
+  ✗ [FAC_NUM_CORRELATIVA] Falta factura Nº2
+  ✗ [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561701: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561703: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6428 ABOUBAL SL
 ----------------------------------------
 ERRORES:
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561157
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561158
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561714
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561715
+  ✗ [FAC_NUM_CORRELATIVA] Falta factura Nº2
+  ✗ [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561157: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561158: 'Facturas en espera' vs esperado 'Totalmente facturado'
-  ⚠ [ESTADO_FAC] Pedido 561714: 'Facturas en espera' vs esperado 'Totalmente facturado'
-  ⚠ [ESTADO_FAC] Pedido 561715: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6431 GZOUGGAGHI SL
 ----------------------------------------
 ERRORES:
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561700
   ✗ [FACTURA_FALTANTE] Sin factura para pedido 561702
+  ✗ [FAC_NUM_CORRELATIVA] Falta factura Nº2
+  ✗ [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
 AVISOS:
   ⚠ [ESTADO_FAC] Pedido 561700: 'Facturas en espera' vs esperado 'Totalmente facturado'
   ⚠ [ESTADO_FAC] Pedido 561702: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6467 WCHANTAH SL
 ----------------------------------------
@@ -144,7 +154,35 @@ ERRORES:
   ✗ [PEDIDO_FALTANTE] Pedido Nº556951 (ROCALLA SA, 4035.35€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561168 (ALUBIX SL, 4187.93€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561170 (ROCALLA SA, 4133.36€)
-CORRECTOS: 1 verificaciones
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377633
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377634
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377635
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377636
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1381501
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382187
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382734
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1385768
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1386395
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1387202
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1389699
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1390578
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1391490
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1394562
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1395467
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1396589
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1399622
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1400638
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1401688
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1404665
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1405732
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1406751
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1409465
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1410324
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1411487
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1414549
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1415479
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1416393
+CORRECTOS: 4 verificaciones
 
 ALUMNO: ADG32 6478 CBAUZA SL
 ----------------------------------------
@@ -169,11 +207,39 @@ ERRORES:
   ✗ [PEDIDO_FALTANTE] Pedido Nº556858 (ROCALLA SA, 3617.90€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561176 (ALUBIX SL, 4143.04€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561177 (ROCALLA SA, 3675.98€)
-CORRECTOS: 1 verificaciones
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377688
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377689
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377691
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377692
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1381533
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382201
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382743
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1385776
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1386406
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1387221
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1389713
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1390586
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1391500
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1394578
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1395491
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1396602
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1399649
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1400665
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1401706
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1404692
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1405740
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1406763
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1409473
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1410332
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1411499
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1414557
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1415487
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1416404
+CORRECTOS: 4 verificaciones
 
 ALUMNO: ADG32 6702 NFORNES SL
 ----------------------------------------
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6706 NSUIYHI SL
 ----------------------------------------
@@ -186,7 +252,7 @@ ERRORES:
   ✗ [FAC_IMPORTE] Factura 2025/00036: 3259.74€ vs 3332.34€
   ✗ [FAC_FECHA] Factura 2025/00036: fecha incorrecta
   ✗ [FAC_FECHA] Factura 2025/00034: fecha incorrecta
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6707 MOUAZINE SL
 ----------------------------------------
@@ -200,7 +266,7 @@ ERRORES:
   ✗ [ALB_IMPORTE] Albarán 37: 4433.44€ vs 4205.96€
   ✗ [FAC_NUMERO] Pedido 561003: factura 2025/00036 vs real 2025/00033
   ✗ [FAC_IMPORTE] Factura 2025/00036: 4433.44€ vs 4205.96€
-CORRECTOS: 1 verificaciones
+CORRECTOS: 7 verificaciones
 
 ALUMNO: ADG32 6713 BCARBONELL SL
 ----------------------------------------
@@ -226,25 +292,50 @@ ERRORES:
   ✗ [PEDIDO_FALTANTE] Pedido Nº556841 (ROCALLA SA, 3154.47€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561417 (ALUBIX SL, 4285.82€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561418 (ROCALLA SA, 2674.10€)
-CORRECTOS: 1 verificaciones
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377595
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377596
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377597
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377598
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1381483
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382166
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382714
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1385755
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1386370
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1387188
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1389691
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1390554
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1391472
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1394548
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1395437
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1396569
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1399604
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1400612
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1401674
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1404639
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1405724
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1406730
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1409458
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1410314
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1411476
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1414541
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1415471
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1416379
+CORRECTOS: 4 verificaciones
 
 ALUMNO: ADG32 6734 LABOLAFIO SL
 ----------------------------------------
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6746 ELLADO SL
 ----------------------------------------
-CORRECTOS: 2 verificaciones
+ERRORES:
+  ✗ [PED_V_TARDIO] Pedido 1399555: introducido tardíamente
+  ✗ [ALB_V_TARDIO] Albarán pedido 1399555: generado tardíamente
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6777 JGARCIA SL
 ----------------------------------------
-ERRORES:
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561428
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561429
-AVISOS:
-  ⚠ [ESTADO_FAC] Pedido 561428: 'Facturas en espera' vs esperado 'Totalmente facturado'
-  ⚠ [ESTADO_FAC] Pedido 561429: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+CORRECTOS: 8 verificaciones
 
 ALUMNO: ADG32 6792 PCAPO SL
 ----------------------------------------
@@ -274,15 +365,39 @@ ERRORES:
   ✗ [PEDIDO_FALTANTE] Pedido Nº557680 (ROCALLA SA, 2002.55€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561422 (ALUBIX SL, 5820.71€)
   ✗ [PEDIDO_FALTANTE] Pedido Nº561423 (ROCALLA SA, 2044.90€)
-CORRECTOS: 1 verificaciones
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377613
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377614
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377615
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1377616
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1381497
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382172
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1382718
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1385764
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1386382
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1387196
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1389696
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1390565
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1391482
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1394558
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1395450
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1396575
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1399610
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1400622
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1401682
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1404652
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1405728
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1406739
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1409461
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1410318
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1411482
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1414545
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1415475
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1416389
+CORRECTOS: 4 verificaciones
 
 ALUMNO: ADG32 6844 TTRAMULLAS SL
 ----------------------------------------
 ERRORES:
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561458
-  ✗ [FACTURA_FALTANTE] Sin factura para pedido 561461
-AVISOS:
-  ⚠ [ESTADO_FAC] Pedido 561458: 'Facturas en espera' vs esperado 'Totalmente facturado'
-  ⚠ [ESTADO_FAC] Pedido 561461: 'Facturas en espera' vs esperado 'Totalmente facturado'
-CORRECTOS: 2 verificaciones
+  ✗ [PED_V_FALTANTE] Pedido venta Nº1414555
+CORRECTOS: 7 verificaciones
 

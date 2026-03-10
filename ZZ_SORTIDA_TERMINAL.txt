@@ -1,0 +1,1443 @@
+(venv) PS C:\Users\bielalzina_cifpjoant\Documents\GITHUB\CORRECTOR_DC_BY_SONET> python .\corrector_empresaula4.py
+
+????????????????????????????????????????????????????????????????????
+?         CORRECTOR EMPRESAULA v1.0                               ?
+?         Gestión Comercial ODOO · Ciclo Admin y Finanzas         ?
+????????????????????????????????????????????????????????????????????
+
+  1 ? Corrección COMPRAS
+  2 ? Corrección VENTAS
+  3 ? Corrección INVENTARIO
+  4 ? Corrección COMPLETA (todos los módulos)
+  5  ? Diagnóstico columnas CSV
+  0  ? Salir
+
+  Selecciona opción: 4
+  Directorio con los CSVs [Enter = actual]: 
+
+??????????????????????????????????????????????????
+  Cargando fechas de entrega individuales...
+??????????????????????????????????????????????????
+  ? 4_FECHA_ENTREGA_TRABAJOS.csv ? 22 fechas de entrega cargadas
+  ·   Expediente 5796: entrega 2025-12-18
+  ·   Expediente 6265: entrega 2025-12-19
+  ·   Expediente 6320: entrega 2025-12-30
+  ·   Expediente 6352: entrega 2025-12-30
+  ·   Expediente 6356: entrega 2025-12-30
+  ·   Expediente 6366: entrega 2025-12-19
+  ·   Expediente 6368: entrega 2025-12-24
+  ·   Expediente 6369: entrega 2025-12-18
+  ·   Expediente 6427: entrega 2025-12-30
+  ·   Expediente 6428: entrega 2025-12-30
+  ·   Expediente 6431: entrega 2025-12-30
+  ·   Expediente 6467: entrega 2025-12-30
+  ·   Expediente 6478: entrega 2025-12-30
+  ·   Expediente 6702: entrega 2025-12-19
+  ·   Expediente 6706: entrega 2025-12-19
+  ·   Expediente 6707: entrega 2025-12-19
+  ·   Expediente 6713: entrega 2025-12-30
+  ·   Expediente 6734: entrega 2025-12-19
+  ·   Expediente 6746: entrega 2025-12-19
+  ·   Expediente 6777: entrega 2025-12-19
+  ·   Expediente 6792: entrega 2025-12-30
+  ·   Expediente 6844: entrega 2025-12-19
+
+??????????????????????????????????????????????????????????????????
+  MÓDULO 1: CORRECCIÓN DE COMPRAS
+??????????????????????????????????????????????????????????????????
+
+??????????????????????????????????????????????????
+  Cargando archivos de compras...
+??????????????????????????????????????????????????
+  ? 0_DATOS_COMPRAS_REALES.csv ? 469 registros
+  ? 1_DATOS_PEDIDOS_COMPRA_ALUMNOS.csv ? 381 registros
+  ? 2_DATOS_ALBARANES_COMPRA_ALUMNOS.csv ? 382 registros
+  ? 3_DATOS_FACTURAS_COMPRA_ALUMNOS.csv ? 364 registros
+
+??????????????????????????????????????????????????
+  Verificando 22 empresa(s)...
+??????????????????????????????????????????????????
+
+? Empresa: ADG32 5796 NSACARES SL
+  · Fecha de entrega: 2025-12-18
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 5796 NSACARES SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6265 SMORENO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  ? Pedido 561013: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-18, entrega:2025-12-19)
+  ? Pedido 561014: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-18, entrega:2025-12-19)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6265 SMORENO SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6320 MNAVARRO SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  ? Pedido 561707: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  ? Pedido 561708: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 561708 (ref: C-C/00021)
+  ? FACTURA FALTANTE para pedido 561707 (ref: C-C/00022)
+  ? EMPRESA ADG32 6320 MNAVARRO SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6352 SAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  ? Pedido 561694: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-28, entrega:2025-12-30)
+  ? Pedido 561695: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-28, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 561694 (ref: C-C/00022)
+  ? FACTURA FALTANTE para pedido 561695 (ref: C-C/00023)
+  ? EMPRESA ADG32 6352 SAANANOU SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6356 WAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (26)
+  ? Pedido 561705: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  ? Pedido 561706: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (26)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 535313 (ref: C-C/00001)
+  ? FACTURA FALTANTE para pedido 535295 (ref: C-C/00002)
+  ? FACTURA FALTANTE para pedido 537767 (ref: C-C/00003)
+  ? FACTURA FALTANTE para pedido 537160 (ref: C-C/00004)
+  ? FACTURA FALTANTE para pedido 540159 (ref: C-C/00005)
+  ? FACTURA FALTANTE para pedido 540161 (ref: C-C/00006)
+  ? FACTURA FALTANTE para pedido 542875 (ref: C-C/00007)
+  ? FACTURA FALTANTE para pedido 545041 (ref: C-C/00010)
+  ? FACTURA FALTANTE para pedido 545755 (ref: C-C/00011)
+  ? FACTURA FALTANTE para pedido 546232 (ref: C-C/00012)
+  ? FACTURA FALTANTE para pedido 547964 (ref: C-C/00013)
+  ? FACTURA FALTANTE para pedido 542874 (ref: C-C/00014)
+  ? FACTURA FALTANTE para pedido 548603 (ref: C-C/00015)
+  ? FACTURA FALTANTE para pedido 548606 (ref: C-C/00016)
+  ? FACTURA FALTANTE para pedido 549377 (ref: C-C/00017)
+  ? FACTURA FALTANTE para pedido 551319 (ref: C-C/00018)
+  ? FACTURA FALTANTE para pedido 551323 (ref: C-C/00019)
+  ? FACTURA FALTANTE para pedido 551595 (ref: C-C/00020)
+  ? FACTURA FALTANTE para pedido 554396 (ref: C-C/00021)
+  ? FACTURA FALTANTE para pedido 554399 (ref: C-C/00022)
+  ? FACTURA FALTANTE para pedido 557603 (ref: C-C/00023)
+  ? FACTURA FALTANTE para pedido 557605 (ref: C-C/00024)
+  ? FACTURA FALTANTE para pedido 560979 (ref: C-C/00025)
+  ? FACTURA FALTANTE para pedido 560980 (ref: C-C/00027)
+  ? FACTURA FALTANTE para pedido 561705 (ref: C-C/00028)
+  ? FACTURA FALTANTE para pedido 561706 (ref: C-C/00029)
+  ? EMPRESA ADG32 6356 WAANANOU SL: 26 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6366 JMORAGUES SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6366 JMORAGUES SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6368 LPIZA SL
+  · Fecha de entrega: 2025-12-24
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 561675 | ALUBIX SL | 2025-12-24 | 171.82€
+  ? PEDIDO FALTANTE: Nº 561677 | ROCALLA SA | 2025-12-24 | 162.14€
+  ? Pedido 560474: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-17, entrega:2025-12-24)
+  ? Pedido 560477: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-17, entrega:2025-12-24)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6368 LPIZA SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6369 VMASTRANGELO SL
+  · Fecha de entrega: 2025-12-18
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  ? Factura 2025/00009: ESTADO PAGO 'Pagado parcialmente' ? debe ser 'Publicado' o 'Pagada'
+  ? EMPRESA ADG32 6369 VMASTRANGELO SL: 1 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6427 NANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  ? Pedido 561701: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  ? Pedido 561703: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 561701 (ref: C-C/00021)
+  ? FACTURA FALTANTE para pedido 561703 (ref: C-C/00023)
+  ? EMPRESA ADG32 6427 NANANOU SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6428 ABOUBAL SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  ? Pedido 561157: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-18, entrega:2025-12-30)
+  ? Pedido 561158: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-18, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 561157 (ref: C-C/00019)
+  ? FACTURA FALTANTE para pedido 561158 (ref: C-C/00020)
+  · Pedido 561714: factura no requerida (emisión = fecha entrega)
+  · Pedido 561715: factura no requerida (emisión = fecha entrega)
+  ? EMPRESA ADG32 6428 ABOUBAL SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6431 GZOUGGAGHI SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  ? Pedido 561700: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  ? Pedido 561702: ESTADO FACTURACIÓN 'Facturas en espera' ? se esperaba 'Totalmente facturado' (emisión:2025-12-29, entrega:2025-12-30)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  ? FACTURA FALTANTE para pedido 561700 (ref: C-C/00021)
+  ? FACTURA FALTANTE para pedido 561702 (ref: C-C/00022)
+  ? EMPRESA ADG32 6431 GZOUGGAGHI SL: 2 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6467 WCHANTAH SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 535293 | ALUBIX SL | 2025-10-17 | 1436.86€
+  ? PEDIDO FALTANTE: Nº 535314 | ROCALLA SA | 2025-10-17 | 1608.09€
+  ? PEDIDO FALTANTE: Nº 537791 | ALUBIX SL | 2025-10-23 | 3718.43€
+  ? PEDIDO FALTANTE: Nº 537793 | ROCALLA SA | 2025-10-23 | 3981.51€
+  ? PEDIDO FALTANTE: Nº 540145 | ALUBIX SL | 2025-10-29 | 4128.91€
+  ? PEDIDO FALTANTE: Nº 540147 | ROCALLA SA | 2025-10-29 | 3860.51€
+  ? PEDIDO FALTANTE: Nº 542353 | ALUBIX SL | 2025-11-05 | 3632.11€
+  ? PEDIDO FALTANTE: Nº 542356 | ROCALLA SA | 2025-11-05 | 4164.82€
+  ? PEDIDO FALTANTE: Nº 546162 | ALUBIX SL | 2025-11-14 | 3949.66€
+  ? PEDIDO FALTANTE: Nº 546163 | ROCALLA SA | 2025-11-14 | 4140.62€
+  ? PEDIDO FALTANTE: Nº 548783 | ALUBIX SL | 2025-11-20 | 4031.84€
+  ? PEDIDO FALTANTE: Nº 548784 | ROCALLA SA | 2025-11-20 | 4464.30€
+  ? PEDIDO FALTANTE: Nº 551291 | ALUBIX SL | 2025-11-26 | 3795.71€
+  ? PEDIDO FALTANTE: Nº 551292 | ROCALLA SA | 2025-11-26 | 4034.75€
+  ? PEDIDO FALTANTE: Nº 554389 | ALUBIX SL | 2025-12-03 | 3847.69€
+  ? PEDIDO FALTANTE: Nº 554390 | ROCALLA SA | 2025-12-03 | 3924.64€
+  ? PEDIDO FALTANTE: Nº 556950 | ALUBIX SL | 2025-12-10 | 4215.23€
+  ? PEDIDO FALTANTE: Nº 556951 | ROCALLA SA | 2025-12-10 | 4035.35€
+  ? PEDIDO FALTANTE: Nº 561168 | ALUBIX SL | 2025-12-18 | 4187.93€
+  ? PEDIDO FALTANTE: Nº 561170 | ROCALLA SA | 2025-12-18 | 4133.36€
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (0)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6467 WCHANTAH SL: 20 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6478 CBAUZA SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 535288 | ALUBIX SL | 2025-10-17 | 1218.47€
+  ? PEDIDO FALTANTE: Nº 535307 | ROCALLA SA | 2025-10-17 | 1057.54€
+  ? PEDIDO FALTANTE: Nº 537784 | ALUBIX SL | 2025-10-23 | 4187.81€
+  ? PEDIDO FALTANTE: Nº 537786 | ROCALLA SA | 2025-10-23 | 3552.56€
+  ? PEDIDO FALTANTE: Nº 540119 | ALUBIX SL | 2025-10-29 | 4545.97€
+  ? PEDIDO FALTANTE: Nº 540120 | ROCALLA SA | 2025-10-29 | 3753.42€
+  ? PEDIDO FALTANTE: Nº 542321 | ALUBIX SL | 2025-11-05 | 4195.07€
+  ? PEDIDO FALTANTE: Nº 542325 | ROCALLA SA | 2025-11-05 | 3349.28€
+  ? PEDIDO FALTANTE: Nº 544973 | ALUBIX SL | 2025-11-12 | 4435.86€
+  ? PEDIDO FALTANTE: Nº 544976 | ROCALLA SA | 2025-11-12 | 3528.36€
+  ? PEDIDO FALTANTE: Nº 548735 | ALUBIX SL | 2025-11-20 | 3759.47€
+  ? PEDIDO FALTANTE: Nº 548736 | ROCALLA SA | 2025-11-20 | 3281.52€
+  ? PEDIDO FALTANTE: Nº 551216 | ALUBIX SL | 2025-11-26 | 4481.84€
+  ? PEDIDO FALTANTE: Nº 551220 | ROCALLA SA | 2025-11-26 | 3782.46€
+  ? PEDIDO FALTANTE: Nº 554347 | ALUBIX SL | 2025-12-03 | 4146.67€
+  ? PEDIDO FALTANTE: Nº 554350 | ROCALLA SA | 2025-12-03 | 3533.20€
+  ? PEDIDO FALTANTE: Nº 556850 | ALUBIX SL | 2025-12-10 | 5097.73€
+  ? PEDIDO FALTANTE: Nº 556858 | ROCALLA SA | 2025-12-10 | 3617.90€
+  ? PEDIDO FALTANTE: Nº 561176 | ALUBIX SL | 2025-12-18 | 4143.04€
+  ? PEDIDO FALTANTE: Nº 561177 | ROCALLA SA | 2025-12-18 | 3675.98€
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (0)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6478 CBAUZA SL: 20 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6702 NFORNES SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6702 NFORNES SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6706 NSUIYHI SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (21)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (21)
+  ? Albarán: NÚMERO incorrecto ? alumno: nan | real: 35
+  ? Albarán nan: FECHA incorrecta ? alumno: None | real: 2025-12-18
+  ? Albarán nan: IMPORTE incorrecto ? 0.00€ vs 3332.34€
+  ? Albarán nan: ESTADO 'Borrador' ? debe ser 'Hecho'
+  3. FACTURAS DE COMPRA
+  ? Factura 2025/00024: FECHA incorrecta ? 2025-12-19 vs 2025-12-18
+  ? Factura 2025/00036: IMPORTE incorrecto ? 3259.74€ vs 3332.34€
+  ? Factura 2025/00036: FECHA incorrecta ? 2025-12-19 vs 2025-12-18
+  ? Factura 2025/00034: FECHA incorrecta ? 2025-12-19 vs 2025-12-18
+  ? EMPRESA ADG32 6706 NSUIYHI SL: 8 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6707 MOUAZINE SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 561006 | ROCALLA SA | 2025-12-18 | 4433.44€
+  ? Pedido 561003: PROVEEDOR incorrecto ? alumno: 'ROCALLA SA' | real: 'ALUBIX SL'
+  ? Pedido 561003: IMPORTE incorrecto ? alumno: 4433.44€ | real: 4205.96€
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  ? Albarán 25: FECHA incorrecta ? alumno: 2025-12-12 | real: 2025-12-10
+  ? Albarán 37: PROVEEDOR incorrecto ? 'ROCALLA SA' vs 'ALUBIX SL'
+  ? Albarán: NÚMERO incorrecto ? alumno: 37 | real: 29
+  ? Albarán 37: IMPORTE incorrecto ? 4433.44€ vs 4205.96€
+  3. FACTURAS DE COMPRA
+  ? Factura pedido 561003: NÚMERO incorrecto ? alumno: 2025/00036 | real: 2025/00033
+  ? Factura 2025/00036: IMPORTE incorrecto ? 4433.44€ vs 4205.96€
+  ? EMPRESA ADG32 6707 MOUAZINE SL: 9 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6713 BCARBONELL SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 535284 | ALUBIX SL | 2025-10-17 | 1458.05€
+  ? PEDIDO FALTANTE: Nº 535309 | ROCALLA SA | 2025-10-17 | 1007.33€
+  ? PEDIDO FALTANTE: Nº 537817 | ALUBIX SL | 2025-10-23 | 4086.78€
+  ? PEDIDO FALTANTE: Nº 537819 | ROCALLA SA | 2025-10-23 | 2654.74€
+  ? PEDIDO FALTANTE: Nº 540729 | ALUBIX SL | 2025-10-30 | 5093.50€
+  ? PEDIDO FALTANTE: Nº 540730 | ROCALLA SA | 2025-10-30 | 3086.11€
+  ? PEDIDO FALTANTE: Nº 542370 | ALUBIX SL | 2025-11-05 | 5405.68€
+  ? PEDIDO FALTANTE: Nº 542376 | ROCALLA SA | 2025-11-05 | 3374.69€
+  ? PEDIDO FALTANTE: Nº 543417 | ALUBIX SL | 2025-11-07 | 66.55€
+  ? PEDIDO FALTANTE: Nº 545521 | ALUBIX SL | 2025-11-13 | 5009.40€
+  ? PEDIDO FALTANTE: Nº 545522 | ROCALLA SA | 2025-11-13 | 3203.48€
+  ? PEDIDO FALTANTE: Nº 548616 | ALUBIX SL | 2025-11-20 | 4575.01€
+  ? PEDIDO FALTANTE: Nº 548617 | ROCALLA SA | 2025-11-20 | 2944.54€
+  ? PEDIDO FALTANTE: Nº 551299 | ALUBIX SL | 2025-11-26 | 4397.75€
+  ? PEDIDO FALTANTE: Nº 551308 | ROCALLA SA | 2025-11-26 | 2845.32€
+  ? PEDIDO FALTANTE: Nº 554369 | ALUBIX SL | 2025-12-03 | 5054.78€
+  ? PEDIDO FALTANTE: Nº 554371 | ROCALLA SA | 2025-12-03 | 3290.60€
+  ? PEDIDO FALTANTE: Nº 556838 | ALUBIX SL | 2025-12-10 | 4768.01€
+  ? PEDIDO FALTANTE: Nº 556841 | ROCALLA SA | 2025-12-10 | 3154.47€
+  ? PEDIDO FALTANTE: Nº 561417 | ALUBIX SL | 2025-12-19 | 4285.82€
+  ? PEDIDO FALTANTE: Nº 561418 | ROCALLA SA | 2025-12-19 | 2674.10€
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (0)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6713 BCARBONELL SL: 21 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6734 LABOLAFIO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (21)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (21)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6734 LABOLAFIO SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6746 ELLADO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (21)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (21)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6746 ELLADO SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6777 JGARCIA SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (22)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (22)
+  3. FACTURAS DE COMPRA
+  · Pedido 561428: factura no requerida (emisión = fecha entrega)
+  · Pedido 561429: factura no requerida (emisión = fecha entrega)
+  ? EMPRESA ADG32 6777 JGARCIA SL: SIN ERRORES EN COMPRAS
+
+? Empresa: ADG32 6792 PCAPO SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE COMPRA
+  ? PEDIDO FALTANTE: Nº 541842 | ALUBIX SL | 2025-11-03 | 1976.54€
+  ? PEDIDO FALTANTE: Nº 541843 | ROCALLA SA | 2025-11-03 | 619.52€
+  ? PEDIDO FALTANTE: Nº 541844 | ALUBIX SL | 2025-11-03 | 2187.08€
+  ? PEDIDO FALTANTE: Nº 541845 | ROCALLA SA | 2025-11-03 | 748.99€
+  ? PEDIDO FALTANTE: Nº 541850 | ROCALLA SA | 2025-11-04 | 1.21€
+  ? PEDIDO FALTANTE: Nº 541851 | ALUBIX SL | 2025-11-04 | 1684.32€
+  ? PEDIDO FALTANTE: Nº 541852 | ROCALLA SA | 2025-11-04 | 537.85€
+  ? PEDIDO FALTANTE: Nº 542297 | ALUBIX SL | 2025-11-05 | 2125.37€
+  ? PEDIDO FALTANTE: Nº 542300 | ROCALLA SA | 2025-11-05 | 687.89€
+  ? PEDIDO FALTANTE: Nº 542352 | ALUBIX SL | 2025-11-05 | 1615.35€
+  ? PEDIDO FALTANTE: Nº 542355 | ROCALLA SA | 2025-11-05 | 529.38€
+  ? PEDIDO FALTANTE: Nº 542384 | ALUBIX SL | 2025-11-05 | 1795.04€
+  ? PEDIDO FALTANTE: Nº 542387 | ROCALLA SA | 2025-11-05 | 619.52€
+  ? PEDIDO FALTANTE: Nº 546114 | ALUBIX SL | 2025-11-13 | 5778.96€
+  ? PEDIDO FALTANTE: Nº 546115 | ROCALLA SA | 2025-11-13 | 1923.30€
+  ? PEDIDO FALTANTE: Nº 549163 | ALUBIX SL | 2025-11-20 | 6122.00€
+  ? PEDIDO FALTANTE: Nº 549166 | ROCALLA SA | 2025-11-20 | 2068.50€
+  ? PEDIDO FALTANTE: Nº 552657 | ALUBIX SL | 2025-11-28 | 5646.47€
+  ? PEDIDO FALTANTE: Nº 552659 | ROCALLA SA | 2025-11-28 | 1968.67€
+  ? PEDIDO FALTANTE: Nº 554387 | ALUBIX SL | 2025-12-03 | 5916.90€
+  ? PEDIDO FALTANTE: Nº 554391 | ROCALLA SA | 2025-12-03 | 2058.82€
+  ? PEDIDO FALTANTE: Nº 557677 | ALUBIX SL | 2025-12-11 | 6221.82€
+  ? PEDIDO FALTANTE: Nº 557680 | ROCALLA SA | 2025-12-11 | 2002.55€
+  ? PEDIDO FALTANTE: Nº 561422 | ALUBIX SL | 2025-12-19 | 5820.71€
+  ? PEDIDO FALTANTE: Nº 561423 | ROCALLA SA | 2025-12-19 | 2044.90€
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (0)
+  3. FACTURAS DE COMPRA
+  ? EMPRESA ADG32 6792 PCAPO SL: 25 ERROR(ES) EN COMPRAS
+
+? Empresa: ADG32 6844 TTRAMULLAS SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE COMPRA
+  ? Todos los pedidos reales están registrados (20)
+  2. ALBARANES DE COMPRA
+  ? Todos los pedidos tienen su albarán (20)
+  3. FACTURAS DE COMPRA
+  · Pedido 561458: factura no requerida (emisión = fecha entrega)
+  · Pedido 561461: factura no requerida (emisión = fecha entrega)
+  ? EMPRESA ADG32 6844 TTRAMULLAS SL: SIN ERRORES EN COMPRAS
+
+
+
+??????????????????????????????????????????????????????????????????
+  MÓDULO 2: CORRECCIÓN DE VENTAS
+??????????????????????????????????????????????????????????????????
+
+??????????????????????????????????????????????????
+  Cargando archivos de ventas...
+??????????????????????????????????????????????????
+  ? 5_DATOS_VENTAS_REALES.csv ? 616 registros
+  ? 6_DATOS_PEDIDOS_VENTA_ALUMNOS.csv ? 504 registros
+  ? 7_DATOS_ALBARANES_VENTA_ALUMNOS.csv ? 512 registros
+  ? 8_DATOS_FACTURAS_VENTA_ALUMNOS.csv ? 440 registros
+
+??????????????????????????????????????????????????
+  Verificando 22 empresa(s)...
+??????????????????????????????????????????????????
+
+? Empresa: ADG32 5796 NSACARES SL
+  · Fecha de entrega: 2025-12-18
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (24 facturas)
+
+? Empresa: ADG32 6265 SMORENO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (23 facturas)
+
+? Empresa: ADG32 6320 MNAVARRO SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00030: origen 'C-V/00031' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (23 facturas)
+
+? Empresa: ADG32 6352 SAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  ? Pedido venta 1414550: introducido en ODOO (2025-12-28) DESPUÉS del límite de facturación (2025-12-19)
+  ? Pedido venta 1415480: introducido en ODOO (2025-12-28) DESPUÉS del límite de facturación (2025-12-19)
+  ? Pedido venta 1416394: introducido en ODOO (2025-12-28) DESPUÉS del límite de facturación (2025-12-19)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00031: origen 'C-V/00028' no identificado
+  ? Albarán venta pedido 1414550: generado (2025-12-28) DESPUÉS del límite viernes (2025-12-19)
+  ? Albarán venta pedido 1415480: generado (2025-12-28) DESPUÉS del límite viernes (2025-12-19)
+  ? Albarán venta pedido 1416394: generado (2025-12-28) DESPUÉS del límite viernes (2025-12-19)
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? NUMERACIÓN NO CORRELATIVA: falta factura Nº2 (salta de 1 a 1)
+  ? FECHA NO CORRELATIVA: factura Nº2 (2025-10-23) es anterior a Nº1 (2025-12-28)
+
+? Empresa: ADG32 6356 WAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00033: origen 'C-V/00028' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (26 facturas)
+
+? Empresa: ADG32 6366 JMORAGUES SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (24 facturas)
+
+? Empresa: ADG32 6368 LPIZA SL
+  · Fecha de entrega: 2025-12-24
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (23 facturas)
+
+? Empresa: ADG32 6369 VMASTRANGELO SL
+  · Fecha de entrega: 2025-12-18
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (25 facturas)
+
+? Empresa: ADG32 6427 NANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00037: origen 'C-V/00030' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? NUMERACIÓN NO CORRELATIVA: falta factura Nº2 (salta de 1 a 1)
+  ? FECHA NO CORRELATIVA: factura Nº2 (2025-10-23) es anterior a Nº1 (2025-12-30)
+
+? Empresa: ADG32 6428 ABOUBAL SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00031: origen 'C-V/00031' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? NUMERACIÓN NO CORRELATIVA: falta factura Nº2 (salta de 1 a 1)
+  ? FECHA NO CORRELATIVA: factura Nº2 (2025-10-24) es anterior a Nº1 (2025-12-30)
+
+? Empresa: ADG32 6431 GZOUGGAGHI SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00029: origen 'C-V/00028' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? NUMERACIÓN NO CORRELATIVA: falta factura Nº2 (salta de 1 a 1)
+  ? FECHA NO CORRELATIVA: factura Nº2 (2025-10-23) es anterior a Nº1 (2025-12-29)
+
+? Empresa: ADG32 6467 WCHANTAH SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? PEDIDO FALTA: Nº 1377633 | COMERCIAL CALCO SA | 2025-10-17 | 4587.42€
+  ? PEDIDO FALTA: Nº 1377634 | COMERCIAL CALCO SA | 2025-10-17 | 3456.68€
+  ? PEDIDO FALTA: Nº 1377635 | COMERCIAL CALCO SA | 2025-10-17 | 4301.56€
+  ? PEDIDO FALTA: Nº 1377636 | COMERCIAL CALCO SA | 2025-10-17 | 3844.18€
+  ? PEDIDO FALTA: Nº 1381501 | BIGCORP SL | 2025-10-27 | 4726.26€
+  ? PEDIDO FALTA: Nº 1382187 | BIGCORP SL | 2025-10-28 | 3806.06€
+  ? PEDIDO FALTA: Nº 1382734 | BIGCORP SL | 2025-10-29 | 3516.56€
+  ? PEDIDO FALTA: Nº 1385768 | COMERCIAL CALCO SA | 2025-11-03 | 3514.76€
+  ? PEDIDO FALTA: Nº 1386395 | BIGCORP SL | 2025-11-04 | 4313.35€
+  ? PEDIDO FALTA: Nº 1387202 | COMERCIAL CALCO SA | 2025-11-05 | 3920.40€
+  ? PEDIDO FALTA: Nº 1389699 | BIGCORP SL | 2025-11-10 | 4110.98€
+  ? PEDIDO FALTA: Nº 1390578 | BIGCORP SL | 2025-11-11 | 4216.26€
+  ? PEDIDO FALTA: Nº 1391490 | COMERCIAL CALCO SA | 2025-11-12 | 3867.77€
+  ? PEDIDO FALTA: Nº 1394562 | COMERCIAL CALCO SA | 2025-11-17 | 3347.77€
+  ? PEDIDO FALTA: Nº 1395467 | BIGCORP SL | 2025-11-18 | 4758.94€
+  ? PEDIDO FALTA: Nº 1396589 | BIGCORP SL | 2025-11-19 | 4697.22€
+  ? PEDIDO FALTA: Nº 1399622 | BIGCORP SL | 2025-11-24 | 4300.64€
+  ? PEDIDO FALTA: Nº 1400638 | BIGCORP SL | 2025-11-25 | 4041.11€
+  ? PEDIDO FALTA: Nº 1401688 | COMERCIAL CALCO SA | 2025-11-26 | 3459.40€
+  ? PEDIDO FALTA: Nº 1404665 | COMERCIAL CALCO SA | 2025-12-01 | 3545.61€
+  ? PEDIDO FALTA: Nº 1405732 | COMERCIAL CALCO SA | 2025-12-02 | 4078.32€
+  ? PEDIDO FALTA: Nº 1406751 | BIGCORP SL | 2025-12-03 | 4091.92€
+  ? PEDIDO FALTA: Nº 1409465 | BIGCORP SL | 2025-12-08 | 4476.70€
+  ? PEDIDO FALTA: Nº 1410324 | BIGCORP SL | 2025-12-09 | 3443.97€
+  ? PEDIDO FALTA: Nº 1411487 | COMERCIAL CALCO SA | 2025-12-10 | 4466.72€
+  ? PEDIDO FALTA: Nº 1414549 | BIGCORP SL | 2025-12-15 | 4692.69€
+  ? PEDIDO FALTA: Nº 1415479 | COMERCIAL CALCO SA | 2025-12-16 | 3505.68€
+  ? PEDIDO FALTA: Nº 1416393 | COMERCIAL CALCO SA | 2025-12-17 | 4397.74€
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (0 facturas)
+
+? Empresa: ADG32 6478 CBAUZA SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? PEDIDO FALTA: Nº 1377688 | BIGCORP SL | 2025-10-17 | 3414.02€
+  ? PEDIDO FALTA: Nº 1377689 | BIGCORP SL | 2025-10-17 | 3893.18€
+  ? PEDIDO FALTA: Nº 1377691 | COMERCIAL CALCO SA | 2025-10-17 | 4201.73€
+  ? PEDIDO FALTA: Nº 1377692 | BIGCORP SL | 2025-10-17 | 3515.66€
+  ? PEDIDO FALTA: Nº 1381533 | BIGCORP SL | 2025-10-27 | 4463.09€
+  ? PEDIDO FALTA: Nº 1382201 | COMERCIAL CALCO SA | 2025-10-28 | 3942.18€
+  ? PEDIDO FALTA: Nº 1382743 | BIGCORP SL | 2025-10-29 | 4043.82€
+  ? PEDIDO FALTA: Nº 1385776 | BIGCORP SL | 2025-11-03 | 4584.69€
+  ? PEDIDO FALTA: Nº 1386406 | COMERCIAL CALCO SA | 2025-11-04 | 3348.68€
+  ? PEDIDO FALTA: Nº 1387221 | COMERCIAL CALCO SA | 2025-11-05 | 3383.16€
+  ? PEDIDO FALTA: Nº 1389713 | BIGCORP SL | 2025-11-10 | 3987.56€
+  ? PEDIDO FALTA: Nº 1390586 | BIGCORP SL | 2025-11-11 | 4078.31€
+  ? PEDIDO FALTA: Nº 1391500 | COMERCIAL CALCO SA | 2025-11-12 | 3880.47€
+  ? PEDIDO FALTA: Nº 1394578 | BIGCORP SL | 2025-11-17 | 3669.93€
+  ? PEDIDO FALTA: Nº 1395491 | BIGCORP SL | 2025-11-18 | 3537.44€
+  ? PEDIDO FALTA: Nº 1396602 | BIGCORP SL | 2025-11-19 | 3290.60€
+  ? PEDIDO FALTA: Nº 1399649 | COMERCIAL CALCO SA | 2025-11-24 | 3769.76€
+  ? PEDIDO FALTA: Nº 1400665 | COMERCIAL CALCO SA | 2025-11-25 | 4673.63€
+  ? PEDIDO FALTA: Nº 1401706 | BIGCORP SL | 2025-11-26 | 3889.55€
+  ? PEDIDO FALTA: Nº 1404692 | BIGCORP SL | 2025-12-01 | 4239.84€
+  ? PEDIDO FALTA: Nº 1405740 | COMERCIAL CALCO SA | 2025-12-02 | 3250.67€
+  ? PEDIDO FALTA: Nº 1406763 | COMERCIAL CALCO SA | 2025-12-03 | 3965.78€
+  ? PEDIDO FALTA: Nº 1409473 | BIGCORP SL | 2025-12-08 | 4361.45€
+  ? PEDIDO FALTA: Nº 1410332 | COMERCIAL CALCO SA | 2025-12-09 | 3869.58€
+  ? PEDIDO FALTA: Nº 1411499 | BIGCORP SL | 2025-12-10 | 4778.90€
+  ? PEDIDO FALTA: Nº 1414557 | BIGCORP SL | 2025-12-15 | 4530.24€
+  ? PEDIDO FALTA: Nº 1415487 | COMERCIAL CALCO SA | 2025-12-16 | 3419.46€
+  ? PEDIDO FALTA: Nº 1416404 | COMERCIAL CALCO SA | 2025-12-17 | 3715.31€
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (0 facturas)
+
+? Empresa: ADG32 6702 NFORNES SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (23 facturas)
+
+? Empresa: ADG32 6706 NSUIYHI SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta MGZ01/SURT/00026: origen 'C-C/00020' no identificado
+  ? Albarán venta MGZ01/SURT/00027: origen 'Devolución de MGZ01/ENTRA/00021' no identificado
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (26 facturas)
+  ? Factura FV-1/2025/00024: ESTADO 'Cancelado' ? debe ser 'Publicado' o 'Pagada'
+
+? Empresa: ADG32 6707 MOUAZINE SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (24 facturas)
+
+? Empresa: ADG32 6713 BCARBONELL SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? PEDIDO FALTA: Nº 1377595 | COMERCIAL CALCO SA | 2025-10-17 | 3698.07€
+  ? PEDIDO FALTA: Nº 1377596 | BIGCORP SL | 2025-10-17 | 3231.62€
+  ? PEDIDO FALTA: Nº 1377597 | BIGCORP SL | 2025-10-17 | 3267.01€
+  ? PEDIDO FALTA: Nº 1377598 | COMERCIAL CALCO SA | 2025-10-17 | 3717.12€
+  ? PEDIDO FALTA: Nº 1381483 | COMERCIAL CALCO SA | 2025-10-27 | 4122.77€
+  ? PEDIDO FALTA: Nº 1382166 | COMERCIAL CALCO SA | 2025-10-28 | 3591.89€
+  ? PEDIDO FALTA: Nº 1382714 | COMERCIAL CALCO SA | 2025-10-29 | 4554.75€
+  ? PEDIDO FALTA: Nº 1385755 | BIGCORP SL | 2025-11-03 | 3877.75€
+  ? PEDIDO FALTA: Nº 1386370 | COMERCIAL CALCO SA | 2025-11-04 | 4615.54€
+  ? PEDIDO FALTA: Nº 1387188 | BIGCORP SL | 2025-11-05 | 4681.80€
+  ? PEDIDO FALTA: Nº 1389691 | BIGCORP SL | 2025-11-10 | 3483.90€
+  ? PEDIDO FALTA: Nº 1390554 | BIGCORP SL | 2025-11-11 | 4779.81€
+  ? PEDIDO FALTA: Nº 1391472 | COMERCIAL CALCO SA | 2025-11-12 | 3958.52€
+  ? PEDIDO FALTA: Nº 1394548 | COMERCIAL CALCO SA | 2025-11-17 | 3198.94€
+  ? PEDIDO FALTA: Nº 1395437 | BIGCORP SL | 2025-11-18 | 4038.38€
+  ? PEDIDO FALTA: Nº 1396569 | BIGCORP SL | 2025-11-19 | 4042.00€
+  ? PEDIDO FALTA: Nº 1399604 | COMERCIAL CALCO SA | 2025-11-24 | 3566.48€
+  ? PEDIDO FALTA: Nº 1400612 | BIGCORP SL | 2025-11-25 | 3355.94€
+  ? PEDIDO FALTA: Nº 1401674 | BIGCORP SL | 2025-11-26 | 3942.19€
+  ? PEDIDO FALTA: Nº 1404639 | COMERCIAL CALCO SA | 2025-12-01 | 3631.81€
+  ? PEDIDO FALTA: Nº 1405724 | BIGCORP SL | 2025-12-02 | 4599.21€
+  ? PEDIDO FALTA: Nº 1406730 | COMERCIAL CALCO SA | 2025-12-03 | 4287.03€
+  ? PEDIDO FALTA: Nº 1409458 | BIGCORP SL | 2025-12-08 | 4761.66€
+  ? PEDIDO FALTA: Nº 1410314 | COMERCIAL CALCO SA | 2025-12-09 | 3447.60€
+  ? PEDIDO FALTA: Nº 1411476 | BIGCORP SL | 2025-12-10 | 3674.47€
+  ? PEDIDO FALTA: Nº 1414541 | BIGCORP SL | 2025-12-15 | 3202.57€
+  ? PEDIDO FALTA: Nº 1415471 | COMERCIAL CALCO SA | 2025-12-16 | 3447.60€
+  ? PEDIDO FALTA: Nº 1416379 | BIGCORP SL | 2025-12-17 | 3789.73€
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (0 facturas)
+
+? Empresa: ADG32 6734 LABOLAFIO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (24 facturas)
+
+? Empresa: ADG32 6746 ELLADO SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  ? Pedido venta 1399555: introducido en ODOO (2025-12-01) DESPUÉS del límite de facturación (2025-11-28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  ? Albarán venta pedido 1399555: generado (2025-12-01) DESPUÉS del límite viernes (2025-11-28)
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (24 facturas)
+
+? Empresa: ADG32 6777 JGARCIA SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? Todos los pedidos de venta registrados (28)
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (26 facturas)
+
+? Empresa: ADG32 6792 PCAPO SL
+  · Fecha de entrega: 2025-12-30
+  1. PEDIDOS DE VENTA
+  ? PEDIDO FALTA: Nº 1377613 | BIGCORP SL | 2025-10-17 | 3392.24€
+  ? PEDIDO FALTA: Nº 1377614 | BIGCORP SL | 2025-10-17 | 3333.26€
+  ? PEDIDO FALTA: Nº 1377615 | COMERCIAL CALCO SA | 2025-10-17 | 4758.94€
+  ? PEDIDO FALTA: Nº 1377616 | BIGCORP SL | 2025-10-17 | 3652.70€
+  ? PEDIDO FALTA: Nº 1381497 | COMERCIAL CALCO SA | 2025-10-27 | 4405.92€
+  ? PEDIDO FALTA: Nº 1382172 | BIGCORP SL | 2025-10-28 | 3894.08€
+  ? PEDIDO FALTA: Nº 1382718 | COMERCIAL CALCO SA | 2025-10-29 | 3921.31€
+  ? PEDIDO FALTA: Nº 1385764 | COMERCIAL CALCO SA | 2025-11-03 | 4219.88€
+  ? PEDIDO FALTA: Nº 1386382 | COMERCIAL CALCO SA | 2025-11-04 | 3217.10€
+  ? PEDIDO FALTA: Nº 1387196 | BIGCORP SL | 2025-11-05 | 3621.84€
+  ? PEDIDO FALTA: Nº 1389696 | COMERCIAL CALCO SA | 2025-11-10 | 3734.38€
+  ? PEDIDO FALTA: Nº 1390565 | COMERCIAL CALCO SA | 2025-11-11 | 4582.88€
+  ? PEDIDO FALTA: Nº 1391482 | BIGCORP SL | 2025-11-12 | 3236.16€
+  ? PEDIDO FALTA: Nº 1394558 | BIGCORP SL | 2025-11-17 | 4542.04€
+  ? PEDIDO FALTA: Nº 1395450 | BIGCORP SL | 2025-11-18 | 4336.95€
+  ? PEDIDO FALTA: Nº 1396575 | COMERCIAL CALCO SA | 2025-11-19 | 3406.77€
+  ? PEDIDO FALTA: Nº 1399610 | COMERCIAL CALCO SA | 2025-11-24 | 3541.06€
+  ? PEDIDO FALTA: Nº 1400622 | COMERCIAL CALCO SA | 2025-11-25 | 3677.19€
+  ? PEDIDO FALTA: Nº 1401682 | BIGCORP SL | 2025-11-26 | 4204.46€
+  ? PEDIDO FALTA: Nº 1404652 | BIGCORP SL | 2025-12-01 | 3852.35€
+  ? PEDIDO FALTA: Nº 1405728 | COMERCIAL CALCO SA | 2025-12-02 | 4450.38€
+  ? PEDIDO FALTA: Nº 1406739 | BIGCORP SL | 2025-12-03 | 3660.86€
+  ? PEDIDO FALTA: Nº 1409461 | COMERCIAL CALCO SA | 2025-12-08 | 3988.46€
+  ? PEDIDO FALTA: Nº 1410318 | COMERCIAL CALCO SA | 2025-12-09 | 3553.78€
+  ? PEDIDO FALTA: Nº 1411482 | BIGCORP SL | 2025-12-10 | 4794.34€
+  ? PEDIDO FALTA: Nº 1414545 | BIGCORP SL | 2025-12-15 | 3834.19€
+  ? PEDIDO FALTA: Nº 1415475 | BIGCORP SL | 2025-12-16 | 4059.26€
+  ? PEDIDO FALTA: Nº 1416389 | BIGCORP SL | 2025-12-17 | 3904.98€
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (0 facturas)
+
+? Empresa: ADG32 6844 TTRAMULLAS SL
+  · Fecha de entrega: 2025-12-19
+  1. PEDIDOS DE VENTA
+  ? PEDIDO FALTA: Nº 1414555 | BIGCORP SL | 2025-12-15 | 4121.87€
+  2. ALBARANES DE VENTA
+  ? Todos los pedidos tienen su albarán de venta
+  3. FACTURAS DE VENTA
+  ? Todos los pedidos de venta están facturados
+  3b. NUMERACIÓN CORRELATIVA FACTURAS VENTA
+  ? Numeración y fechas de facturas de venta: correctas (25 facturas)
+
+??????????????????????????????????????????????????
+Verificación de ventas completada
+
+
+??????????????????????????????????????????????????????????????????
+  MÓDULO 3: CORRECCIÓN DE INVENTARIO
+??????????????????????????????????????????????????????????????????
+
+??????????????????????????????????????????????????
+  Cargando archivos de inventario...
+??????????????????????????????????????????????????
+  ? 9_DATOS_INVENTARIO_ALUMNO.csv ? 72 registros
+  ? 10_HISTORIAL_E_S_INVENTARIO_ALUMNO.csv ? 2866 registros
+  · Columnas inventario  : ['A_CLAU_UNICA_I', 'A_IDTOTS_I', 'ID', 'A_EXPEDIENT_I', 'A_EMPRESA_I', 'A_PRODUCTE_I', 'A_COST_UNITARI_I', 'A_IMPORT_I', 'A_UNITATS_REALS_I', 'A_UNITATS_DISPONIBLES_I', 'A_UNITATS_PENDENTS_ENTRAR_I', 'A_UNITATS_PENDENTS_SORTIR_I']
+  · Columnas historial   : ['A_CLAU_UNICA_HES', 'ID-TOTS', 'ID', 'A_EXPEDIENT_HES', 'A_EMPRESA_HES', 'A_PRODUCTE_HES', 'A_DATA_HES', 'A_REFERENCIA_HES', 'A_ORIGEN_HES', 'A_DESTI_HES', 'A_UNITATS_HES', 'A_IN_HES', 'A_OUT_HES', 'A_STOCK_HES', 'A_OPERACIO_HES', 'A_ESTAT_HES']
+
+??????????????????????????????????????????????????
+  Verificando 18 empresa(s)...
+??????????????????????????????????????????????????
+
+? Empresa: ADG32 5796 NSACARES SL
+  · Fecha de entrega: 2025-12-18
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _AP8461_: stock mínimo OK (0), stock final: 0
+  ? Producto _DF4598_: stock mínimo OK (0), stock final: 0
+  ? Producto _FA6235_: stock mínimo OK (0), stock final: 0
+  ? Producto _LA5365_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 5796 NSACARES SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6265 SMORENO SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _P001_: stock mínimo OK (0), stock final: 0
+  ? Producto _P002_: stock mínimo OK (0), stock final: 0
+  ? Producto _P003_: stock mínimo OK (0), stock final: 0
+  ? Producto _P004_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6265 SMORENO SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6320 MNAVARRO SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _MN2001_: stock mínimo OK (0), stock final: 0
+  ? Producto _MN2002_: stock mínimo OK (0), stock final: 0
+  ? Producto _MN2003_: stock mínimo OK (0), stock final: 0
+  ? Producto _MN2004_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6320 MNAVARRO SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6352 SAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _LGM171_: stock mínimo OK (0), stock final: 0
+  ? Producto _PB20000-W_: stock mínimo OK (0), stock final: 0
+  ? Producto _SDU3_: stock mínimo OK (0), stock final: 0
+  ? Producto _TCB355_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6352 SAANANOU SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6356 WAANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _8846295_: stock mínimo OK (0), stock final: 0
+  ? Producto _9644056_: stock mínimo OK (0), stock final: 0
+  ? Producto _9644096_: stock mínimo OK (0), stock final: 0
+  ? Producto _97140MB_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6356 WAANANOU SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6366 JMORAGUES SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 39.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _A0001_: stock mínimo OK (0), stock final: 1
+  ? Producto _A0002_: stock mínimo OK (0), stock final: 1
+  ? Producto _A0003_: stock mínimo OK (0), stock final: 1
+  ? Producto _A0004_: stock mínimo OK (0), stock final: 1
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6366 JMORAGUES SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6368 LPIZA SL
+  · Fecha de entrega: 2025-12-24
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _AD003_: stock mínimo OK (0), stock final: 0
+  ? Producto _FL004_: stock mínimo OK (0), stock final: 0
+  ? Producto _SW002_: stock mínimo OK (0), stock final: 0
+  ? Producto _TP001_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6368 LPIZA SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6369 VMASTRANGELO SL
+  · Fecha de entrega: 2025-12-18
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _PA0001_: stock mínimo OK (0), stock final: 0
+  ? Producto _PE0001_: stock mínimo OK (0), stock final: 0
+  ? Producto _PO0001_: stock mínimo OK (0), stock final: 0
+  ? Producto _SI0001_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6369 VMASTRANGELO SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6427 NANANOU SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _ALC-96-0110L_: stock mínimo OK (0), stock final: 0
+  ? Producto _GDL-100-028X_: stock mínimo OK (0), stock final: 0
+  ? Producto _TIR-250-00250P_: stock mínimo OK (0), stock final: 0
+  ? Producto _TJR-02-050E_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6427 NANANOU SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6428 ABOUBAL SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _AC002_: stock mínimo OK (0), stock final: 0
+  ? Producto _NB004_: stock mínimo OK (0), stock final: 0
+  ? Producto _OM001_: stock mínimo OK (0), stock final: 0
+  ? Producto _RP003_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6428 ABOUBAL SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6431 GZOUGGAGHI SL
+  · Fecha de entrega: 2025-12-30
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _501_: stock mínimo OK (0), stock final: 0
+  ? Producto _502_: stock mínimo OK (0), stock final: 0
+  ? Producto _503_: stock mínimo OK (0), stock final: 0
+  ? Producto _504_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6431 GZOUGGAGHI SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6702 NFORNES SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _BOT-004_: stock mínimo OK (0), stock final: 0
+  ? Producto _CSC-001_: stock mínimo OK (0), stock final: 0
+  ? Producto _GNT-002_: stock mínimo OK (0), stock final: 0
+  ? Producto _ULL-003_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6702 NFORNES SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6706 NSUIYHI SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _BT1200_: stock mínimo OK (0), stock final: 0
+  ? Producto _CN1200_: stock mínimo OK (0), stock final: 0
+  ? Producto _HP700_: stock mínimo OK (0), stock final: 0
+  ? Producto _OKI700_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6706 NSUIYHI SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6707 MOUAZINE SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _AP0004_: stock mínimo OK (0), stock final: 0
+  ? Producto _BB0001_: stock mínimo OK (0), stock final: 0
+  ? Producto _CC0003_: stock mínimo OK (0), stock final: 0
+  ? Producto _FP0002_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6707 MOUAZINE SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6734 LABOLAFIO SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 0.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _AU0026_: stock mínimo OK (0), stock final: 0
+  ? Producto _CR0015_: stock mínimo OK (0), stock final: 0
+  ? Producto _NM0031_: stock mínimo OK (0), stock final: 0
+  ? Producto _TE0028_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6734 LABOLAFIO SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6746 ELLADO SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 267.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _BE0001_: stock mínimo OK (0), stock final: 4
+  ? Producto _CE0003_: stock mínimo OK (0), stock final: 6
+  ? Producto _CE0004_: stock mínimo OK (0), stock final: 7
+  ? Producto _ED0002_: stock mínimo OK (0), stock final: 5
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6746 ELLADO SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6777 JGARCIA SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 20.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _CAM101_: stock mínimo OK (0), stock final: 0
+  ? Producto _DAV101_: stock mínimo OK (0), stock final: 0
+  ? Producto _PAN101_: stock mínimo OK (0), stock final: 1
+  ? Producto _POLO101_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6777 JGARCIA SL: SIN ERRORES EN INVENTARIO
+
+? Empresa: ADG32 6844 TTRAMULLAS SL
+  · Fecha de entrega: 2025-12-19
+  1. VALOR DEL INVENTARIO FINAL
+  ? Valor total inventario: 15.00€ (límite: 1.000€)
+  2. OPERACIONES PENDIENTES
+  3. ANÁLISIS DE STOCK NEGATIVO
+  · Usando columna A_STOCK_HES precalculada para verificación de stock
+  ? Producto _5001_: stock mínimo OK (0), stock final: 3
+  ? Producto _5002_: stock mínimo OK (0), stock final: 0
+  ? Producto _5003_: stock mínimo OK (0), stock final: 0
+  ? Producto _5004_: stock mínimo OK (0), stock final: 0
+  ? Sin stocks negativos detectados
+  ? EMPRESA ADG32 6844 TTRAMULLAS SL: SIN ERRORES EN INVENTARIO
+
+??????????????????????????????????????????????????????????????????
+  INFORME FINAL DE CORRECCIÓN
+??????????????????????????????????????????????????????????????????
+
+  RESUMEN GLOBAL:
+  ? Verificaciones correctas : 153
+  ? Avisos                  : 16
+  ? Errores totales          : 271
+
+??????????????????????????????????????????????????
+  RESUMEN POR ALUMNO
+??????????????????????????????????????????????????
+
+  EXPEDIENTE   EMPRESA                               ERR   AVI    OK  CALIFICACIÓN
+  ------------ ----------------------------------- ----- ----- -----  --------------
+  5796         ADG32 5796 NSACARES SL                  0     0     8  10.0/10
+  6265         ADG32 6265 SMORENO SL                   0     2     8  9.8/10
+  6320         ADG32 6320 MNAVARRO SL                  2     2     8  8.8/10
+  6352         ADG32 6352 SAANANOU SL                 10     2     7  4.8/10
+  6356         ADG32 6356 WAANANOU SL                 26     2     8  0.0/10
+  6366         ADG32 6366 JMORAGUES SL                 0     0     8  10.0/10
+  6368         ADG32 6368 LPIZA SL                     2     2     7  8.8/10
+  6369         ADG32 6369 VMASTRANGELO SL              1     0     8  9.5/10
+  6427         ADG32 6427 NANANOU SL                   4     2     7  7.8/10
+  6428         ADG32 6428 ABOUBAL SL                   4     2     7  7.8/10
+  6431         ADG32 6431 GZOUGGAGHI SL                4     2     7  7.8/10
+  6467         ADG32 6467 WCHANTAH SL                 48     0     4  0.0/10
+  6478         ADG32 6478 CBAUZA SL                   48     0     4  0.0/10
+  6702         ADG32 6702 NFORNES SL                   0     0     8  10.0/10
+  6706         ADG32 6706 NSUIYHI SL                   8     0     8  6.0/10
+  6707         ADG32 6707 MOUAZINE SL                  9     0     7  5.5/10
+  6713         ADG32 6713 BCARBONELL SL               49     0     4  0.0/10
+  6734         ADG32 6734 LABOLAFIO SL                 0     0     8  10.0/10
+  6746         ADG32 6746 ELLADO SL                    2     0     8  9.0/10
+  6777         ADG32 6777 JGARCIA SL                   0     0     8  10.0/10
+  6792         ADG32 6792 PCAPO SL                    53     0     4  0.0/10
+  6844         ADG32 6844 TTRAMULLAS SL                1     0     7  9.5/10
+
+??????????????????????????????????????????????????
+  DETALLE DE ERRORES POR ALUMNO
+??????????????????????????????????????????????????
+
+  6265 — ADG32 6265 SMORENO SL
+    ? [ESTADO_FAC] Pedido 561013: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561014: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6320 — ADG32 6320 MNAVARRO SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561708
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561707
+    ? [ESTADO_FAC] Pedido 561707: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561708: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6352 — ADG32 6352 SAANANOU SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561694
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561695
+    ? [PED_V_TARDIO] Pedido 1414550: introducido tardíamente
+    ? [PED_V_TARDIO] Pedido 1415480: introducido tardíamente
+    ? [PED_V_TARDIO] Pedido 1416394: introducido tardíamente
+    ? [ALB_V_TARDIO] Albarán pedido 1414550: generado tardíamente
+    ? [ALB_V_TARDIO] Albarán pedido 1415480: generado tardíamente
+    ? [ALB_V_TARDIO] Albarán pedido 1416394: generado tardíamente
+    ? [FAC_NUM_CORRELATIVA] Falta factura Nº2
+    ? [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
+    ? [ESTADO_FAC] Pedido 561694: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561695: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6356 — ADG32 6356 WAANANOU SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 535313
+    ? [FACTURA_FALTANTE] Sin factura para pedido 535295
+    ? [FACTURA_FALTANTE] Sin factura para pedido 537767
+    ? [FACTURA_FALTANTE] Sin factura para pedido 537160
+    ? [FACTURA_FALTANTE] Sin factura para pedido 540159
+    ? [FACTURA_FALTANTE] Sin factura para pedido 540161
+    ? [FACTURA_FALTANTE] Sin factura para pedido 542875
+    ? [FACTURA_FALTANTE] Sin factura para pedido 545041
+    ? [FACTURA_FALTANTE] Sin factura para pedido 545755
+    ? [FACTURA_FALTANTE] Sin factura para pedido 546232
+    ? [FACTURA_FALTANTE] Sin factura para pedido 547964
+    ? [FACTURA_FALTANTE] Sin factura para pedido 542874
+    ? [FACTURA_FALTANTE] Sin factura para pedido 548603
+    ? [FACTURA_FALTANTE] Sin factura para pedido 548606
+    ? [FACTURA_FALTANTE] Sin factura para pedido 549377
+    ? [FACTURA_FALTANTE] Sin factura para pedido 551319
+    ? [FACTURA_FALTANTE] Sin factura para pedido 551323
+    ? [FACTURA_FALTANTE] Sin factura para pedido 551595
+    ? [FACTURA_FALTANTE] Sin factura para pedido 554396
+    ? [FACTURA_FALTANTE] Sin factura para pedido 554399
+    ? [FACTURA_FALTANTE] Sin factura para pedido 557603
+    ? [FACTURA_FALTANTE] Sin factura para pedido 557605
+    ? [FACTURA_FALTANTE] Sin factura para pedido 560979
+    ? [FACTURA_FALTANTE] Sin factura para pedido 560980
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561705
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561706
+    ? [ESTADO_FAC] Pedido 561705: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561706: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6368 — ADG32 6368 LPIZA SL
+    ? [PEDIDO_FALTANTE] Pedido Nº561675 (ALUBIX SL, 171.82€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561677 (ROCALLA SA, 162.14€)
+    ? [ESTADO_FAC] Pedido 560474: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 560477: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6369 — ADG32 6369 VMASTRANGELO SL
+    ? [FAC_ESTADO] Factura 2025/00009: estado 'Pagado parcialmente'
+
+  6427 — ADG32 6427 NANANOU SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561701
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561703
+    ? [FAC_NUM_CORRELATIVA] Falta factura Nº2
+    ? [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
+    ? [ESTADO_FAC] Pedido 561701: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561703: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6428 — ADG32 6428 ABOUBAL SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561157
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561158
+    ? [FAC_NUM_CORRELATIVA] Falta factura Nº2
+    ? [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
+    ? [ESTADO_FAC] Pedido 561157: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561158: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6431 — ADG32 6431 GZOUGGAGHI SL
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561700
+    ? [FACTURA_FALTANTE] Sin factura para pedido 561702
+    ? [FAC_NUM_CORRELATIVA] Falta factura Nº2
+    ? [FAC_FECHA_ORDEN] Factura Nº2: fecha anterior a anterior
+    ? [ESTADO_FAC] Pedido 561700: 'Facturas en espera' vs esperado 'Totalmente facturado'
+    ? [ESTADO_FAC] Pedido 561702: 'Facturas en espera' vs esperado 'Totalmente facturado'
+
+  6467 — ADG32 6467 WCHANTAH SL
+    ? [PEDIDO_FALTANTE] Pedido Nº535293 (ALUBIX SL, 1436.86€)
+    ? [PEDIDO_FALTANTE] Pedido Nº535314 (ROCALLA SA, 1608.09€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537791 (ALUBIX SL, 3718.43€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537793 (ROCALLA SA, 3981.51€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540145 (ALUBIX SL, 4128.91€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540147 (ROCALLA SA, 3860.51€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542353 (ALUBIX SL, 3632.11€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542356 (ROCALLA SA, 4164.82€)
+    ? [PEDIDO_FALTANTE] Pedido Nº546162 (ALUBIX SL, 3949.66€)
+    ? [PEDIDO_FALTANTE] Pedido Nº546163 (ROCALLA SA, 4140.62€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548783 (ALUBIX SL, 4031.84€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548784 (ROCALLA SA, 4464.30€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551291 (ALUBIX SL, 3795.71€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551292 (ROCALLA SA, 4034.75€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554389 (ALUBIX SL, 3847.69€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554390 (ROCALLA SA, 3924.64€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556950 (ALUBIX SL, 4215.23€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556951 (ROCALLA SA, 4035.35€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561168 (ALUBIX SL, 4187.93€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561170 (ROCALLA SA, 4133.36€)
+    ? [PED_V_FALTANTE] Pedido venta Nº1377633
+    ? [PED_V_FALTANTE] Pedido venta Nº1377634
+    ? [PED_V_FALTANTE] Pedido venta Nº1377635
+    ? [PED_V_FALTANTE] Pedido venta Nº1377636
+    ? [PED_V_FALTANTE] Pedido venta Nº1381501
+    ? [PED_V_FALTANTE] Pedido venta Nº1382187
+    ? [PED_V_FALTANTE] Pedido venta Nº1382734
+    ? [PED_V_FALTANTE] Pedido venta Nº1385768
+    ? [PED_V_FALTANTE] Pedido venta Nº1386395
+    ? [PED_V_FALTANTE] Pedido venta Nº1387202
+    ? [PED_V_FALTANTE] Pedido venta Nº1389699
+    ? [PED_V_FALTANTE] Pedido venta Nº1390578
+    ? [PED_V_FALTANTE] Pedido venta Nº1391490
+    ? [PED_V_FALTANTE] Pedido venta Nº1394562
+    ? [PED_V_FALTANTE] Pedido venta Nº1395467
+    ? [PED_V_FALTANTE] Pedido venta Nº1396589
+    ? [PED_V_FALTANTE] Pedido venta Nº1399622
+    ? [PED_V_FALTANTE] Pedido venta Nº1400638
+    ? [PED_V_FALTANTE] Pedido venta Nº1401688
+    ? [PED_V_FALTANTE] Pedido venta Nº1404665
+    ? [PED_V_FALTANTE] Pedido venta Nº1405732
+    ? [PED_V_FALTANTE] Pedido venta Nº1406751
+    ? [PED_V_FALTANTE] Pedido venta Nº1409465
+    ? [PED_V_FALTANTE] Pedido venta Nº1410324
+    ? [PED_V_FALTANTE] Pedido venta Nº1411487
+    ? [PED_V_FALTANTE] Pedido venta Nº1414549
+    ? [PED_V_FALTANTE] Pedido venta Nº1415479
+    ? [PED_V_FALTANTE] Pedido venta Nº1416393
+
+  6478 — ADG32 6478 CBAUZA SL
+    ? [PEDIDO_FALTANTE] Pedido Nº535288 (ALUBIX SL, 1218.47€)
+    ? [PEDIDO_FALTANTE] Pedido Nº535307 (ROCALLA SA, 1057.54€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537784 (ALUBIX SL, 4187.81€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537786 (ROCALLA SA, 3552.56€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540119 (ALUBIX SL, 4545.97€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540120 (ROCALLA SA, 3753.42€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542321 (ALUBIX SL, 4195.07€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542325 (ROCALLA SA, 3349.28€)
+    ? [PEDIDO_FALTANTE] Pedido Nº544973 (ALUBIX SL, 4435.86€)
+    ? [PEDIDO_FALTANTE] Pedido Nº544976 (ROCALLA SA, 3528.36€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548735 (ALUBIX SL, 3759.47€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548736 (ROCALLA SA, 3281.52€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551216 (ALUBIX SL, 4481.84€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551220 (ROCALLA SA, 3782.46€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554347 (ALUBIX SL, 4146.67€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554350 (ROCALLA SA, 3533.20€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556850 (ALUBIX SL, 5097.73€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556858 (ROCALLA SA, 3617.90€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561176 (ALUBIX SL, 4143.04€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561177 (ROCALLA SA, 3675.98€)
+    ? [PED_V_FALTANTE] Pedido venta Nº1377688
+    ? [PED_V_FALTANTE] Pedido venta Nº1377689
+    ? [PED_V_FALTANTE] Pedido venta Nº1377691
+    ? [PED_V_FALTANTE] Pedido venta Nº1377692
+    ? [PED_V_FALTANTE] Pedido venta Nº1381533
+    ? [PED_V_FALTANTE] Pedido venta Nº1382201
+    ? [PED_V_FALTANTE] Pedido venta Nº1382743
+    ? [PED_V_FALTANTE] Pedido venta Nº1385776
+    ? [PED_V_FALTANTE] Pedido venta Nº1386406
+    ? [PED_V_FALTANTE] Pedido venta Nº1387221
+    ? [PED_V_FALTANTE] Pedido venta Nº1389713
+    ? [PED_V_FALTANTE] Pedido venta Nº1390586
+    ? [PED_V_FALTANTE] Pedido venta Nº1391500
+    ? [PED_V_FALTANTE] Pedido venta Nº1394578
+    ? [PED_V_FALTANTE] Pedido venta Nº1395491
+    ? [PED_V_FALTANTE] Pedido venta Nº1396602
+    ? [PED_V_FALTANTE] Pedido venta Nº1399649
+    ? [PED_V_FALTANTE] Pedido venta Nº1400665
+    ? [PED_V_FALTANTE] Pedido venta Nº1401706
+    ? [PED_V_FALTANTE] Pedido venta Nº1404692
+    ? [PED_V_FALTANTE] Pedido venta Nº1405740
+    ? [PED_V_FALTANTE] Pedido venta Nº1406763
+    ? [PED_V_FALTANTE] Pedido venta Nº1409473
+    ? [PED_V_FALTANTE] Pedido venta Nº1410332
+    ? [PED_V_FALTANTE] Pedido venta Nº1411499
+    ? [PED_V_FALTANTE] Pedido venta Nº1414557
+    ? [PED_V_FALTANTE] Pedido venta Nº1415487
+    ? [PED_V_FALTANTE] Pedido venta Nº1416404
+
+  6706 — ADG32 6706 NSUIYHI SL
+    ? [ALB_NUMERO] Albarán Nºnan vs real Nº35
+    ? [ALB_FECHA] Albarán nan: None vs 2025-12-18
+    ? [ALB_IMPORTE] Albarán nan: 0.00€ vs 3332.34€
+    ? [ALB_ESTADO] Albarán nan: estado 'Borrador'
+    ? [FAC_FECHA] Factura 2025/00024: fecha incorrecta
+    ? [FAC_IMPORTE] Factura 2025/00036: 3259.74€ vs 3332.34€
+    ? [FAC_FECHA] Factura 2025/00036: fecha incorrecta
+    ? [FAC_FECHA] Factura 2025/00034: fecha incorrecta
+
+  6707 — ADG32 6707 MOUAZINE SL
+    ? [PEDIDO_FALTANTE] Pedido Nº561006 (ROCALLA SA, 4433.44€)
+    ? [PROVEEDOR_ERROR] Pedido 561003: alumno 'ROCALLA SA' vs real 'ALUBIX SL'
+    ? [IMPORTE_ERROR] Pedido 561003: 4433.44€ vs 4205.96€
+    ? [ALB_FECHA] Albarán 25: 2025-12-12 vs 2025-12-10
+    ? [ALB_PROVEEDOR] Albarán 37: proveedor incorrecto
+    ? [ALB_NUMERO] Albarán Nº37 vs real Nº29
+    ? [ALB_IMPORTE] Albarán 37: 4433.44€ vs 4205.96€
+    ? [FAC_NUMERO] Pedido 561003: factura 2025/00036 vs real 2025/00033
+    ? [FAC_IMPORTE] Factura 2025/00036: 4433.44€ vs 4205.96€
+
+  6713 — ADG32 6713 BCARBONELL SL
+    ? [PEDIDO_FALTANTE] Pedido Nº535284 (ALUBIX SL, 1458.05€)
+    ? [PEDIDO_FALTANTE] Pedido Nº535309 (ROCALLA SA, 1007.33€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537817 (ALUBIX SL, 4086.78€)
+    ? [PEDIDO_FALTANTE] Pedido Nº537819 (ROCALLA SA, 2654.74€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540729 (ALUBIX SL, 5093.50€)
+    ? [PEDIDO_FALTANTE] Pedido Nº540730 (ROCALLA SA, 3086.11€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542370 (ALUBIX SL, 5405.68€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542376 (ROCALLA SA, 3374.69€)
+    ? [PEDIDO_FALTANTE] Pedido Nº543417 (ALUBIX SL, 66.55€)
+    ? [PEDIDO_FALTANTE] Pedido Nº545521 (ALUBIX SL, 5009.40€)
+    ? [PEDIDO_FALTANTE] Pedido Nº545522 (ROCALLA SA, 3203.48€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548616 (ALUBIX SL, 4575.01€)
+    ? [PEDIDO_FALTANTE] Pedido Nº548617 (ROCALLA SA, 2944.54€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551299 (ALUBIX SL, 4397.75€)
+    ? [PEDIDO_FALTANTE] Pedido Nº551308 (ROCALLA SA, 2845.32€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554369 (ALUBIX SL, 5054.78€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554371 (ROCALLA SA, 3290.60€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556838 (ALUBIX SL, 4768.01€)
+    ? [PEDIDO_FALTANTE] Pedido Nº556841 (ROCALLA SA, 3154.47€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561417 (ALUBIX SL, 4285.82€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561418 (ROCALLA SA, 2674.10€)
+    ? [PED_V_FALTANTE] Pedido venta Nº1377595
+    ? [PED_V_FALTANTE] Pedido venta Nº1377596
+    ? [PED_V_FALTANTE] Pedido venta Nº1377597
+    ? [PED_V_FALTANTE] Pedido venta Nº1377598
+    ? [PED_V_FALTANTE] Pedido venta Nº1381483
+    ? [PED_V_FALTANTE] Pedido venta Nº1382166
+    ? [PED_V_FALTANTE] Pedido venta Nº1382714
+    ? [PED_V_FALTANTE] Pedido venta Nº1385755
+    ? [PED_V_FALTANTE] Pedido venta Nº1386370
+    ? [PED_V_FALTANTE] Pedido venta Nº1387188
+    ? [PED_V_FALTANTE] Pedido venta Nº1389691
+    ? [PED_V_FALTANTE] Pedido venta Nº1390554
+    ? [PED_V_FALTANTE] Pedido venta Nº1391472
+    ? [PED_V_FALTANTE] Pedido venta Nº1394548
+    ? [PED_V_FALTANTE] Pedido venta Nº1395437
+    ? [PED_V_FALTANTE] Pedido venta Nº1396569
+    ? [PED_V_FALTANTE] Pedido venta Nº1399604
+    ? [PED_V_FALTANTE] Pedido venta Nº1400612
+    ? [PED_V_FALTANTE] Pedido venta Nº1401674
+    ? [PED_V_FALTANTE] Pedido venta Nº1404639
+    ? [PED_V_FALTANTE] Pedido venta Nº1405724
+    ? [PED_V_FALTANTE] Pedido venta Nº1406730
+    ? [PED_V_FALTANTE] Pedido venta Nº1409458
+    ? [PED_V_FALTANTE] Pedido venta Nº1410314
+    ? [PED_V_FALTANTE] Pedido venta Nº1411476
+    ? [PED_V_FALTANTE] Pedido venta Nº1414541
+    ? [PED_V_FALTANTE] Pedido venta Nº1415471
+    ? [PED_V_FALTANTE] Pedido venta Nº1416379
+
+  6746 — ADG32 6746 ELLADO SL
+    ? [PED_V_TARDIO] Pedido 1399555: introducido tardíamente
+    ? [ALB_V_TARDIO] Albarán pedido 1399555: generado tardíamente
+
+  6792 — ADG32 6792 PCAPO SL
+    ? [PEDIDO_FALTANTE] Pedido Nº541842 (ALUBIX SL, 1976.54€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541843 (ROCALLA SA, 619.52€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541844 (ALUBIX SL, 2187.08€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541845 (ROCALLA SA, 748.99€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541850 (ROCALLA SA, 1.21€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541851 (ALUBIX SL, 1684.32€)
+    ? [PEDIDO_FALTANTE] Pedido Nº541852 (ROCALLA SA, 537.85€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542297 (ALUBIX SL, 2125.37€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542300 (ROCALLA SA, 687.89€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542352 (ALUBIX SL, 1615.35€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542355 (ROCALLA SA, 529.38€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542384 (ALUBIX SL, 1795.04€)
+    ? [PEDIDO_FALTANTE] Pedido Nº542387 (ROCALLA SA, 619.52€)
+    ? [PEDIDO_FALTANTE] Pedido Nº546114 (ALUBIX SL, 5778.96€)
+    ? [PEDIDO_FALTANTE] Pedido Nº546115 (ROCALLA SA, 1923.30€)
+    ? [PEDIDO_FALTANTE] Pedido Nº549163 (ALUBIX SL, 6122.00€)
+    ? [PEDIDO_FALTANTE] Pedido Nº549166 (ROCALLA SA, 2068.50€)
+    ? [PEDIDO_FALTANTE] Pedido Nº552657 (ALUBIX SL, 5646.47€)
+    ? [PEDIDO_FALTANTE] Pedido Nº552659 (ROCALLA SA, 1968.67€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554387 (ALUBIX SL, 5916.90€)
+    ? [PEDIDO_FALTANTE] Pedido Nº554391 (ROCALLA SA, 2058.82€)
+    ? [PEDIDO_FALTANTE] Pedido Nº557677 (ALUBIX SL, 6221.82€)
+    ? [PEDIDO_FALTANTE] Pedido Nº557680 (ROCALLA SA, 2002.55€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561422 (ALUBIX SL, 5820.71€)
+    ? [PEDIDO_FALTANTE] Pedido Nº561423 (ROCALLA SA, 2044.90€)
+    ? [PED_V_FALTANTE] Pedido venta Nº1377613
+    ? [PED_V_FALTANTE] Pedido venta Nº1377614
+    ? [PED_V_FALTANTE] Pedido venta Nº1377615
+    ? [PED_V_FALTANTE] Pedido venta Nº1377616
+    ? [PED_V_FALTANTE] Pedido venta Nº1381497
+    ? [PED_V_FALTANTE] Pedido venta Nº1382172
+    ? [PED_V_FALTANTE] Pedido venta Nº1382718
+    ? [PED_V_FALTANTE] Pedido venta Nº1385764
+    ? [PED_V_FALTANTE] Pedido venta Nº1386382
+    ? [PED_V_FALTANTE] Pedido venta Nº1387196
+    ? [PED_V_FALTANTE] Pedido venta Nº1389696
+    ? [PED_V_FALTANTE] Pedido venta Nº1390565
+    ? [PED_V_FALTANTE] Pedido venta Nº1391482
+    ? [PED_V_FALTANTE] Pedido venta Nº1394558
+    ? [PED_V_FALTANTE] Pedido venta Nº1395450
+    ? [PED_V_FALTANTE] Pedido venta Nº1396575
+    ? [PED_V_FALTANTE] Pedido venta Nº1399610
+    ? [PED_V_FALTANTE] Pedido venta Nº1400622
+    ? [PED_V_FALTANTE] Pedido venta Nº1401682
+    ? [PED_V_FALTANTE] Pedido venta Nº1404652
+    ? [PED_V_FALTANTE] Pedido venta Nº1405728
+    ? [PED_V_FALTANTE] Pedido venta Nº1406739
+    ? [PED_V_FALTANTE] Pedido venta Nº1409461
+    ? [PED_V_FALTANTE] Pedido venta Nº1410318
+    ? [PED_V_FALTANTE] Pedido venta Nº1411482
+    ? [PED_V_FALTANTE] Pedido venta Nº1414545
+    ? [PED_V_FALTANTE] Pedido venta Nº1415475
+    ? [PED_V_FALTANTE] Pedido venta Nº1416389
+
+  6844 — ADG32 6844 TTRAMULLAS SL
+    ? [PED_V_FALTANTE] Pedido venta Nº1414555
+  ? 
+Informe exportado a: .\INFORME_CORRECCIONES.csv
+  ? Detalle exportado a: .\INFORME_DETALLE.txt
+(venv) PS C:\Users\bielalzina_cifpjoant\Documents\GITHUB\CORRECTOR_DC_BY_SONET> 
