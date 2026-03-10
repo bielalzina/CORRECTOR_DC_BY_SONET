@@ -92,4 +92,125 @@ def normalizar_importe(valor):
         return 0.0
         
 
+def normalizar_fecha(valor, formatos=None):
+    # Parsea fechas en multiples formatos
+    if pd.isna(valor) or str(valor).strip() == "":
+        return None
+    s = str(valor).strip()
+    if formatos is None:
+        formatos = ["%d/%m/%Y", "%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d-%m-%Y"]
+    for fmt in formatos:
+        try:
+            return datetime.strptime(
+                s[
+                    :
+                        len(
+                            fmt.replace("%Y", "2000")
+                            .replace("%m", "01")
+                            .replace("%d", "01")
+                            .replace("%H", "00")
+                            .replace("%M", "00")
+                            .replace("%S", "00")
+                        )
+                    ],
+                    fmt,
+                ).date()
+        except:
+            pass
+    # Intentam format automatic PANDAS
+    try:
+        return pd.to_datetime(s).date()
+    except:
+        return None
 
+
+def extraer_expediente(nombre_empresa):
+    # Extreu el num. d'expedient del nom de l'empresa: Ej: 'ADG32 5796 NSACARES SL' → '5796'
+    if pd.isna(nombre_empresa):          # Consistente con normalizar_fecha
+        return None
+    m = re.search(r"\b(\d{4,5})\b", str(nombre_empresa))
+    if m:
+        return m.group(1)
+    else:
+        return None   # None facilita detección de fallos
+  
+
+
+def leer_csv(ruta, separador=","):
+    # llegeix un CSV tenint en compte "comillas" i separadors especials
+    try:
+        df = pd.read_csv(
+            ruta,
+            sep=separador,
+            encoding="utf-8",
+            dtype=str,
+            quotechar='"',
+            skipinitialspace=True,
+        )
+        # Netejar noms de columnes
+        df.columns = df.columns.str.strip().str.replace('"', "")
+        return df
+    except UnicodeDecodeError:
+        try:
+            df = pd.read_csv(
+                ruta,
+                sep=separador,
+                encoding="latin-1",
+                dtype=str,
+                quotechar='"',
+                skipinitialspace=True,
+            )
+            df.columns = df.columns.str.strip().str.replace('"', "")
+            return df
+        except Exception as e:
+            print(c(f"     ERROR leyendo {ruta}: {e}", Color.RED))
+            return None
+    except Exception as e:
+        print(c(f"     ERROR leyendo {ruta}: {e}", Color.RED))
+        return None
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# CLASSE PRINCIPAL: CORRECTOR
+# ═════════════════════════════════════════════════════════════════════════════
+
+class CorrectorEmpresaula:
+
+    def __init__(self, directorio="."):
+        self.dir = directorio
+        self.errores_total = 0
+        self.avisos_total = 0
+        self.correctos_total = 0
+        self.resumen_por_alumno = {}
+    
+    def _ruta(self, nombre):
+        return os.path.join(self.dir, nombre)
+    
+    def _registrar(self, empresa, tipo, mensaje, nivel="error"):
+        exp = extraer_expediente(empresa)
+        if exp not in self.resumen_por_alumno:
+            self.resumen_por_alumno[exp] = {
+                "empresa": empresa,
+                "errores": [],
+                "avisos": [],
+                "ok": [],
+            }
+        if nivel == "error":
+            self.resumen_por_alumno[exp]["errores"].append(f"[{tipo}] {mensaje}")
+            self.errores_total += 1
+        elif nivel == "aviso":
+            self.resumen_por_alumno[exp]["avisos"].append(f"[{tipo}] {mensaje}")
+            self.avisos_total += 1
+        else:
+            self.resumen_por_alumno[exp]["ok"].append(f"[{tipo}] {mensaje}")
+            self.correctos_total += 1
+
+        # ------------------------------------------------------
+        # MODULO 1: COMPRAS
+        # ------------------------------------------------------
+
+
+        def corregir_compras(self, fecha_entrega_str=None):
+            header("MÓDULO 1: CORRECCIÓN DE COMPRAS")
+
+    
